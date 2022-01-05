@@ -13,9 +13,9 @@ public class ShadowMain {
 	   String pageLoadStatus = "";
 	   
 	   /////ELEMENTOS WEB/////
-	   @FindBy(css = "html.mti-inactive body#page-home.category-home div#site-wrapper.top header#site-header h1.logo-third a img")
+	   @FindBy(css = ".logo-third > a:nth-child(1) > img")
 	   WebElement icono;
-	   @FindBy(css = "html.mti-inactive body#page-home.category-home div#site-wrapper.top footer#site-footer div.footer-share-btns div.footer-share-btns-inner ul.footer-link-banners li a img")
+	   @FindBy(css = ".footer-link-banners > li:nth-child(1) > a:nth-child(1) > img")
 	   WebElement portal;
 	   
 	   /////CONSTRUCTOR/////
@@ -24,5 +24,16 @@ public class ShadowMain {
 		   PageFactory.initElements(driver, this);
 		   
 	   }
+	   public ShadowMain() {
+		   
+	   }
 	   /////METODOS/////
+	   public void getIcono() {
+		   driver.findElement((By) icono);
+	   }
+	   public void clickPortal() {
+		   ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", portal);
+		   portal.click();
+	   }
+	   
 }   

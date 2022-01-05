@@ -3,16 +3,18 @@ package Driver;
 import org.openqa.selenium.WebDriver;
 
 public class DriverFactory {
+	
 	public DriverFactory() {
 		
 	}
+	/////INSTANCIA//////
 	private static DriverFactory instance = new DriverFactory();
 	
 	public static DriverFactory getInstance() {
 		return instance;
 	}
 	
-	//diseño de factory
+	/////DISEÑO DEL FACTORY/////
 	ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	
 	public WebDriver getDriver() {

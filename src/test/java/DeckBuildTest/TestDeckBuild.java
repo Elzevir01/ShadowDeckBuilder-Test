@@ -20,25 +20,28 @@ import PageModel.ShadowMain;
 
 @Test
 public class TestDeckBuild {
+	WebDriver driver;
 	BrowserFactory bf = new BrowserFactory();
 	ShadowMain sm ;
 	
 	@Test
-	public void test() {
-		sm= new ShadowMain(bf.getInstance());
-		
+	public void test() throws InterruptedException{//borrar {
+		sm= new ShadowMain(driver);
+		sm.clickPortal();
+		Thread.sleep(5000);///borrar
 	}
   @BeforeClass
   public void build() {//String Browser, String url
 	  
 	  DriverFactory.getInstance().setDriver(bf.createBrowserIntance("CHROME"));
-	  WebDriver driver = DriverFactory.getInstance().getDriver();
+	  driver = DriverFactory.getInstance().getDriver();
 	  
 	  
   }
 
   @AfterClass
-  public void afterClass() {
+  public void tearDown() {
+	  bf.removeDriver();
   }
 
 

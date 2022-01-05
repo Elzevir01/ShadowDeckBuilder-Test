@@ -1,5 +1,6 @@
 package Driver;
 
+import java.sql.Driver;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
@@ -8,9 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowserFactory {
-
+	WebDriver driver = null;
+	
 	public WebDriver createBrowserIntance(String browser) {
-		WebDriver driver = null;
+		
 
 		switch (browser.toString().toUpperCase()) {
 		case "CHROME":
@@ -35,6 +37,10 @@ public class BrowserFactory {
 	public WebDriver getInstance() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	public void removeDriver() {
+		driver.close();
+		driver.quit();
 	}
 
 }

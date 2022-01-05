@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DeckBuildTest.NewTest">
+      <class name="DeckBuildTest.TestDeckBuild">
         <methods>
-          <include name="beforeClass"/>
-          <include name="f"/>
-          <include name="beforeTest"/>
+          <include name="build"/>
+          <include name="test"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- DeckBuildTest.NewTest -->
+      </class> <!-- DeckBuildTest.TestDeckBuild -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
