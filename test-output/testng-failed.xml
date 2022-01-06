@@ -7,7 +7,7 @@
         <methods>
           <include name="build"/>
           <include name="test"/>
-          <include name="afterClass"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- DeckBuildTest.TestDeckBuild -->
     </classes>

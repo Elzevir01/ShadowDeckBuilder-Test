@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-04T18:10:58 ART" name="Default suite" finished-at="2022-01-04T18:11:11 ART" duration-ms="12514">
+  <suite started-at="2022-01-05T16:28:12 ART" name="Default suite" finished-at="2022-01-05T16:28:36 ART" duration-ms="23750">
     <groups>
     </groups>
-    <test started-at="2022-01-04T18:10:58 ART" name="Default test" finished-at="2022-01-04T18:11:11 ART" duration-ms="12514">
+    <test started-at="2022-01-05T16:28:12 ART" name="Default test" finished-at="2022-01-05T16:28:36 ART" duration-ms="23750">
       <class name="DeckBuildTest.TestDeckBuild">
-        <test-method is-config="true" signature="build()[pri:0, instance:DeckBuildTest.TestDeckBuild@20f5281c]" started-at="2022-01-04T18:10:58 ART" name="build" finished-at="2022-01-04T18:11:05 ART" duration-ms="6714" status="PASS">
+        <test-method is-config="true" signature="build()[pri:0, instance:DeckBuildTest.TestDeckBuild@20f5281c]" started-at="2022-01-05T16:28:12 ART" name="build" finished-at="2022-01-05T16:28:17 ART" duration-ms="5394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- build -->
-        <test-method signature="test()[pri:0, instance:DeckBuildTest.TestDeckBuild@20f5281c]" started-at="2022-01-04T18:11:05 ART" name="test" finished-at="2022-01-04T18:11:10 ART" duration-ms="5454" status="PASS">
+        <test-method signature="test()[pri:0, instance:DeckBuildTest.TestDeckBuild@20f5281c]" started-at="2022-01-05T16:28:17 ART" name="test" finished-at="2022-01-05T16:28:35 ART" duration-ms="18036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:DeckBuildTest.TestDeckBuild@20f5281c]" started-at="2022-01-04T18:11:11 ART" name="tearDown" finished-at="2022-01-04T18:11:11 ART" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DeckBuildTest.TestDeckBuild@20f5281c]" started-at="2022-01-05T16:28:35 ART" name="tearDown" finished-at="2022-01-05T16:28:36 ART" duration-ms="229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

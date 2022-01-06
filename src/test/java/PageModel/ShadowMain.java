@@ -1,16 +1,20 @@
 package PageModel;
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import Js.jScript;
+
 public class ShadowMain {
 	   
 		WebDriver driver;
-	   String pageLoadStatus = "";
+		jScript js = new jScript();
+	   //String pageLoadStatus = "";
 	   
 	   /////ELEMENTOS WEB/////
 	   @FindBy(css = ".logo-third > a:nth-child(1) > img")
@@ -33,7 +37,9 @@ public class ShadowMain {
 	   }
 	   public void clickPortal() {
 		   ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", portal);
+		   js.highLight(driver, portal);
 		   portal.click();
+		   js.waitForPageToLoad(driver);
 	   }
 	   
 }   
