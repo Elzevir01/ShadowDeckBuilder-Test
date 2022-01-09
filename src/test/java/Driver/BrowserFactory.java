@@ -1,6 +1,5 @@
 package Driver;
 
-import java.sql.Driver;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
