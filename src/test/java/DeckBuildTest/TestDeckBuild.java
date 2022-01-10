@@ -1,8 +1,8 @@
 package DeckBuildTest;
 
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
 
 import java.util.ArrayList;
 
@@ -13,6 +13,8 @@ import PageModel.ShadowMain;
 import PageModel.ShadowPortal;
 import PageModel.ShadowCode;
 
+import Data.DataP;
+
 import Driver.BrowserFactory;
 import Driver.DriverFactory;
 
@@ -20,13 +22,15 @@ import Driver.DriverFactory;
 public class TestDeckBuild {
 	WebDriver driver;
 	BrowserFactory bf = new BrowserFactory();
+	
+	static DataP dp;
 
 	ShadowMain sm;
 	ShadowPortal sp;
 	ShadowDeck sd;
 	ShadowCode sc;/// posterior
-
-	@Test
+	
+	@Test(dataProvider="deckCards",dataProviderClass=DataP.class)
 	public void test_1_Navegacion() throws InterruptedException {
 
 		// ---web oficcial de shadowverse---//
@@ -60,5 +64,14 @@ public class TestDeckBuild {
 	public void tearDown() {
 		bf.removeDriver();
 	}
+	
+	/*@DataProvider(name="CardDP")
+    public static Object[][] getCardData(){
+		dp = new DataP();
+		String[][] data = dp.cardData();
+		
+        return data;
+        }; */
+        
 
 }
