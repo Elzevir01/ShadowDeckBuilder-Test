@@ -38,4 +38,13 @@ public class jScript {
 		return true;
 
 	}
+	/////SCROLL HACIA EL ELEMENTO/////
+	public void moveToElement( WebDriver driver, WebElement elemento) {
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", elemento);
+	}
+	//////////COMBINADO///////////
+	public void moveyhightlight(WebDriver driver, WebElement elemento){
+		moveToElement(driver, elemento);
+		highLight(driver, elemento);
+	}
 }

@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-10T18:56:07 ART" name="Default suite" finished-at="2022-01-10T18:56:51 ART" duration-ms="44811">
+  <suite started-at="2022-01-11T20:12:25 ART" name="Default suite" finished-at="2022-01-11T20:12:58 ART" duration-ms="32323">
     <groups>
     </groups>
-    <test started-at="2022-01-10T18:56:07 ART" name="Default test" finished-at="2022-01-10T18:56:51 ART" duration-ms="44811">
+    <test started-at="2022-01-11T20:12:25 ART" name="Default test" finished-at="2022-01-11T20:12:58 ART" duration-ms="32323">
       <class name="DeckBuildTest.TestDeckBuild">
-        <test-method is-config="true" signature="build()[pri:0, instance:DeckBuildTest.TestDeckBuild@56c4278e]" started-at="2022-01-10T18:56:07 ART" name="build" finished-at="2022-01-10T18:56:50 ART" duration-ms="43273" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DeckBuildTest.TestDeckBuild@56c4278e]" started-at="2022-01-11T20:12:25 ART" name="setUp" finished-at="2022-01-11T20:12:32 ART" duration-ms="6545" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- build -->
-        <test-method signature="test_1_Navegacion()[pri:0, instance:DeckBuildTest.TestDeckBuild@56c4278e]" started-at="2022-01-10T18:56:50 ART" name="test_1_Navegacion" data-provider="deckCards" finished-at="2022-01-10T18:56:50 ART" duration-ms="129" status="FAIL">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-[public void DeckBuildTest.TestDeckBuild.test_1_Navegacion() throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: test_1_Navegacion([])
-Arguments: [(java.lang.String) Vampiro Carmesí]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-[public void DeckBuildTest.TestDeckBuild.test_1_Navegacion() throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: test_1_Navegacion([])
-Arguments: [(java.lang.String) Vampiro Carmesí]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:914)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+        </test-method> <!-- setUp -->
+        <test-method signature="test_1_Navegacion()[pri:1, instance:DeckBuildTest.TestDeckBuild@56c4278e]" started-at="2022-01-11T20:12:32 ART" name="test_1_Navegacion" finished-at="2022-01-11T20:12:57 ART" duration-ms="25426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_1_Navegacion -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:DeckBuildTest.TestDeckBuild@56c4278e]" started-at="2022-01-10T18:56:51 ART" name="tearDown" finished-at="2022-01-10T18:56:51 ART" duration-ms="679" status="PASS">
+        <test-method signature="test_2_Construccion()[pri:2, instance:DeckBuildTest.TestDeckBuild@56c4278e]" started-at="2022-01-11T20:12:57 ART" name="test_2_Construccion" finished-at="2022-01-11T20:12:57 ART" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_2_Construccion -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DeckBuildTest.TestDeckBuild@56c4278e]" started-at="2022-01-11T20:12:57 ART" name="tearDown" finished-at="2022-01-11T20:12:58 ART" duration-ms="228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

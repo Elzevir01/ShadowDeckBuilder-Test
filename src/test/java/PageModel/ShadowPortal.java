@@ -2,17 +2,18 @@ package PageModel;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Js.jScript;
+//import Js.jScript;
 
-public class ShadowPortal {
+public class ShadowPortal extends Base{
+	
 	///// ELEMENTOS WEB/////
-	WebDriver driver;
-	jScript js = new jScript();
-
+	// ---LOGO---//
+	@FindBy(css = ".bl-header-logo-image")
+	WebElement logo;
+	
 	// ---desplegable idioma->idioma--//
 	@FindBy(css = "li.is-lang") 
 	WebElement lenguaje;
@@ -44,37 +45,21 @@ public class ShadowPortal {
 	}
 
 	//// METODOS/////
-	public void menuLenguaje() {
-		new Actions(driver).moveToElement(lenguaje).perform();
-		js.highLight(driver, lenguaje);
+	public void portalEspañol() throws InterruptedException {
+		cursorTo(driver, lenguaje);
+		clickElement(driver, español);
+		Thread.sleep(2000);
 	}
-
-	public void menuEspañol() throws InterruptedException {
-		js.highLight(driver, español);
-		español.click();
-		//js.waitForPageToLoad(driver);
-		Thread.sleep(2000);//carga del lenguaje
+	public void portalUrias() {
+		clickElement(driver, urias);
+		clickElement(driver, uriasbuildDeck);
 	}
-
-	public void clickUrias() {
-		js.highLight(driver, urias);
-		urias.click();
+	public void portalCode() {
+		cursorTo(driver, deckBuilder);
+		clickElement(driver, deckCode);
 	}
-
-	public void clickdeckBuilder() {
-		js.highLight(driver, uriasbuildDeck);
-		uriasbuildDeck.click();
-		js.waitForPageToLoad(driver);
+	public void checkLogo() {
+		checkElement(logo);
 	}
-
-	public void menuMazo() {
-		js.highLight(driver, deckBuilder);
-		new Actions(driver).moveToElement(deckBuilder).perform();
-		js.highLight(driver, deckBuilder);
-	}
-
-	public void menuBuild() {
-		js.highLight(driver, deckCode);
-		deckCode.click();
-	}
+	
 }
