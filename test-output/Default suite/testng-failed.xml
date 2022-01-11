@@ -6,8 +6,8 @@
       <class name="DeckBuildTest.TestDeckBuild">
         <methods>
           <include name="build"/>
-          <include name="test"/>
           <include name="tearDown"/>
+          <include name="test_1_Navegacion"/>
         </methods>
       </class> <!-- DeckBuildTest.TestDeckBuild -->
     </classes>

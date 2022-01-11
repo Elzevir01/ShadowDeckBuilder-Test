@@ -30,7 +30,7 @@ public class TestDeckBuild {
 	ShadowDeck sd;
 	ShadowCode sc;/// posterior
 	
-	@Test(dataProvider="deckCards",dataProviderClass=DataP.class)
+	@Test//(dataProvider="deckCards",dataProviderClass=DataP.class)
 	public void test_1_Navegacion() throws InterruptedException {
 
 		// ---web oficcial de shadowverse---//
