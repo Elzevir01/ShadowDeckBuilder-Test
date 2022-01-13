@@ -8,9 +8,10 @@ public class jScript {
 	
 	private JavascriptExecutor js;
 	String pageLoadStatus = "";
+	
 	/////ELEMENTO SELECCIONADO EN ROJO/////
-	public boolean highLight(WebDriver driv, WebElement element) {
-		js = (JavascriptExecutor) driv;
+	public boolean highLight(WebDriver driver, WebElement element) {
+		js = (JavascriptExecutor) driver;
 		for (int iC = 0; iC < 3; iC++) {
 			try {
 				js.executeScript("arguments[0].setAttribute('style', 'border: 2px solid red')", element);
@@ -25,10 +26,10 @@ public class jScript {
 		return true;
 	}
 	/////ESPERAR CARGA DE PAGINA/////
-	public boolean waitForPageToLoad(WebDriver driv) {
+	public boolean waitForPageToLoad(WebDriver driver) {
 		try {
 			do {
-				js = (JavascriptExecutor) driv;
+				js = (JavascriptExecutor) driver;
 				pageLoadStatus = (String) js.executeScript("return document.readyState");
 			} while (!pageLoadStatus.equals("complete"));
 

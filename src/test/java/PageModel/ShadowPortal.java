@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-//import Js.jScript;
-
 public class ShadowPortal extends Base{
 	
 	///// ELEMENTOS WEB/////
@@ -40,23 +38,23 @@ public class ShadowPortal extends Base{
 
 	}
 
-	public ShadowPortal() {
+	/*public ShadowPortal() {
 
-	}
+	}*/
 
 	//// METODOS/////
 	public void portalEspañol() throws InterruptedException {
-		cursorTo(driver, lenguaje);
-		clickElement(driver, español);
+		cursorTo(driver, lenguaje);//driver, 
+		clickElement(driver, español);//driver, 
 		Thread.sleep(2000);
 	}
 	public void portalUrias() {
-		clickElement(driver, urias);
-		clickElement(driver, uriasbuildDeck);
+		clickElement(driver, urias);//driver, 
+		clickElement(driver, uriasbuildDeck);//driver, 
 	}
 	public void portalCode() {
-		cursorTo(driver, deckBuilder);
-		clickElement(driver, deckCode);
+		cursorTo(driver, deckBuilder);//driver, 
+		clickElement(driver, deckCode);//driver, 
 	}
 	public void checkLogo() {
 		checkElement(logo);

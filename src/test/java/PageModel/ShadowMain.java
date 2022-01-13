@@ -5,13 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Js.jScript;
-
 public class ShadowMain extends PageModel.Base {
 	   
 		WebDriver driver;
-		jScript js = new jScript();
-	   //String pageLoadStatus = "";
 	   
 	   /////ELEMENTOS WEB/////
 	   @FindBy(css = ".logo-third > a:nth-child(1) > img")
@@ -26,25 +22,16 @@ public class ShadowMain extends PageModel.Base {
 		   
 	   }
 	   
-	   public ShadowMain() {
+	   /*public ShadowMain() {
 		   
-	   }
-	   //#####################################################
-	   /////METODOS/////
-	   /*public void getIcono() {
-		   driver.findElement((By) icono);
-	   }
-	   public void clickPortal() {
-		   ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", portal);
-		   js.highLight(driver, portal);
-		   portal.click();
-		   js.waitForPageToLoad(driver);
 	   }*/
-	   //#####################################################
+	   
+	   /////METODOS/////
+	  
 	   public boolean checkLogo() {
 		  return checkElement(logo);
 	   }
 	   public void portalClick() {
-		   clickElementFocus(driver,portal);
+		   clickElementFocus(driver, portal);//
 	   }
 }   

@@ -11,7 +11,6 @@ import org.openqa.selenium.WebDriver;
 import PageModel.ShadowDeck;
 import PageModel.ShadowMain;
 import PageModel.ShadowPortal;
-import PageModel.Base;
 import PageModel.ShadowCode;
 
 import Data.DataP;
@@ -30,14 +29,13 @@ public class TestDeckBuild {
 	ShadowPortal sp;
 	ShadowDeck sd;
 	ShadowCode sc;/// posterior
-	Base bs;
 	
 	@Test(priority=1)
 	public void test_1_Navegacion() throws InterruptedException {
-		bs = new Base(driver);
+		//bs = new Base(driver);
 		
 		// ---web oficcial de shadowverse---//
-		sm = new ShadowMain(driver);//driver
+		sm = new ShadowMain(driver);
 		sm.checkLogo();
 		sm.portalClick();
 
@@ -47,7 +45,7 @@ public class TestDeckBuild {
 
 		// ---pestaña portal---//
 		sp = new ShadowPortal(driver);
-		//@@@@@@chedck
+		//sp.checkLogo();//////
 		sp.portalEspañol();
 		sp.portalUrias();
 

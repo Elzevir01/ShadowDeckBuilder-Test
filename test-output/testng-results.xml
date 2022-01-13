@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-11T20:12:25 ART" name="Default suite" finished-at="2022-01-11T20:12:58 ART" duration-ms="32323">
+  <suite started-at="2022-01-12T21:08:31 ART" name="Default suite" finished-at="2022-01-12T21:09:05 ART" duration-ms="34220">
     <groups>
     </groups>
-    <test started-at="2022-01-11T20:12:25 ART" name="Default test" finished-at="2022-01-11T20:12:58 ART" duration-ms="32323">
+    <test started-at="2022-01-12T21:08:31 ART" name="Default test" finished-at="2022-01-12T21:09:05 ART" duration-ms="34220">
       <class name="DeckBuildTest.TestDeckBuild">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:DeckBuildTest.TestDeckBuild@56c4278e]" started-at="2022-01-11T20:12:25 ART" name="setUp" finished-at="2022-01-11T20:12:32 ART" duration-ms="6545" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DeckBuildTest.TestDeckBuild@56c4278e]" started-at="2022-01-12T21:08:31 ART" name="setUp" finished-at="2022-01-12T21:08:37 ART" duration-ms="5549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test_1_Navegacion()[pri:1, instance:DeckBuildTest.TestDeckBuild@56c4278e]" started-at="2022-01-11T20:12:32 ART" name="test_1_Navegacion" finished-at="2022-01-11T20:12:57 ART" duration-ms="25426" status="PASS">
+        <test-method signature="test_1_Navegacion()[pri:1, instance:DeckBuildTest.TestDeckBuild@56c4278e]" started-at="2022-01-12T21:08:37 ART" name="test_1_Navegacion" finished-at="2022-01-12T21:09:05 ART" duration-ms="28362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_1_Navegacion -->
-        <test-method signature="test_2_Construccion()[pri:2, instance:DeckBuildTest.TestDeckBuild@56c4278e]" started-at="2022-01-11T20:12:57 ART" name="test_2_Construccion" finished-at="2022-01-11T20:12:57 ART" duration-ms="4" status="PASS">
+        <test-method signature="test_2_Construccion()[pri:2, instance:DeckBuildTest.TestDeckBuild@56c4278e]" started-at="2022-01-12T21:09:05 ART" name="test_2_Construccion" finished-at="2022-01-12T21:09:05 ART" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2_Construccion -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:DeckBuildTest.TestDeckBuild@56c4278e]" started-at="2022-01-11T20:12:57 ART" name="tearDown" finished-at="2022-01-11T20:12:58 ART" duration-ms="228" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DeckBuildTest.TestDeckBuild@56c4278e]" started-at="2022-01-12T21:09:05 ART" name="tearDown" finished-at="2022-01-12T21:09:05 ART" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
