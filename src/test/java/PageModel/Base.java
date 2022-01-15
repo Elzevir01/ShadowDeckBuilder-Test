@@ -1,5 +1,6 @@
 package PageModel;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -23,19 +24,23 @@ public class Base {
 	public void clickElement(WebDriver driver, WebElement elemento) {//WebDriver driver,
 		js.highLight(driver, elemento);
         elemento.click();
+        js.waitForPageToLoad(driver);
     }
 	public void clickElementFocus( WebDriver driver, WebElement elemento) {//WebDriver driver,
 		js.moveyhightlight(driver, elemento);
 		elemento.click();
 		js.waitForPageToLoad(driver);
 	}
+	public void clickCarta(WebDriver driver, String carta) throws InterruptedException {
+		WebElement crd = driver.findElement(By.xpath(carta));
+		js.moveyhightlight(driver, crd);
+		crd.click();
+	}
 	public void clickExtLink(WebDriver driver, WebElement elemento) {//WebDriver driver,
-		//js.highLight(driver, elemento);
 		js.moveyhightlight(driver, elemento);
         elemento.click();
         js.waitForPageToLoad(driver);
     }
-	
 	public void sendKey(WebDriver driver, WebElement elemento, String texto) {//WebDriver driver, 
 		js.highLight(driver, elemento);
 		elemento.sendKeys(texto);

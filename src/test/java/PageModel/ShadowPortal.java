@@ -48,9 +48,10 @@ public class ShadowPortal extends Base{
 		clickElement(driver, español);//driver, 
 		Thread.sleep(2000);
 	}
-	public void portalUrias() {
+	public void portalUrias() throws InterruptedException {
 		clickElement(driver, urias);//driver, 
-		clickElement(driver, uriasbuildDeck);//driver, 
+		clickElement(driver, uriasbuildDeck);//driver,
+		Thread.sleep(4000);
 	}
 	public void portalCode() {
 		cursorTo(driver, deckBuilder);//driver, 

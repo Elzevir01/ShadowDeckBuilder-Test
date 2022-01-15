@@ -14,12 +14,14 @@ import PageModel.ShadowPortal;
 import PageModel.ShadowCode;
 
 import Data.DataP;
+import Data.DataC;
 
 import Driver.BrowserFactory;
 import Driver.DriverFactory;
 
 @Test
 public class TestDeckBuild {
+	
 	WebDriver driver;
 	BrowserFactory bf = new BrowserFactory();
 	
@@ -32,7 +34,6 @@ public class TestDeckBuild {
 	
 	@Test(priority=1)
 	public void test_1_Navegacion() throws InterruptedException {
-		//bs = new Base(driver);
 		
 		// ---web oficcial de shadowverse---//
 		sm = new ShadowMain(driver);
@@ -41,27 +42,37 @@ public class TestDeckBuild {
 
 		// ---cambiar de pestaña a portal---//
 		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
-		driver.switchTo().window(tabs2.get(1));// driver.switchTo().window(tabs2.get(0));
+		driver.switchTo().window(tabs2.get(1));
 
 		// ---pestaña portal---//
 		sp = new ShadowPortal(driver);
 		//sp.checkLogo();//////
 		sp.portalEspañol();
 		sp.portalUrias();
-
-		
-
-	}
-	@Test(priority=2)//(dataProvider="deckCards",dataProviderClass=DataP.class)
-	public void test_2_Construccion() {
 		// ---deck builder---//
-		//@@@@check
-		
+		sd = new ShadowDeck(driver);
+		sd.formatoIlimitado();
 		
 	}
-
+	@Test(priority=2, dataProvider="deckCards",dataProviderClass=DataC.class)
+	public void test_2_Construccion(String carta, int numero ) throws InterruptedException {
+		
+		// ---deck builder---//
+		System.out.println("carta: "+ carta);
+		System.out.println("numero: "+numero);
+		
+		for(int i=0;i<numero;i++) {
+			sd.clickCarta(driver, carta);
+			
+		}
+	}
+	@Test(priority=3)
+	public void test_3_Code() {
+		
+	}
+	
 	@BeforeClass
-	public void setUp() {// String Browser, String url
+	public void setUp() {
 
 		DriverFactory.getInstance().setDriver(bf.createBrowserIntance("CHROME"));
 		driver = DriverFactory.getInstance().getDriver();
@@ -73,13 +84,6 @@ public class TestDeckBuild {
 		bf.removeDriver();
 	}
 	
-	/*@DataProvider(name="CardDP")
-    public static Object[][] getCardData(){
-		dp = new DataP();
-		String[][] data = dp.cardData();
-		
-        return data;
-        }; */
         
 
 }

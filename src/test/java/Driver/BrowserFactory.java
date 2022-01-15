@@ -27,7 +27,7 @@ public class BrowserFactory {
 		}
 		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		driver.get("https://shadowverse.com/");
 		
 		return driver;
