@@ -11,7 +11,7 @@ import Js.jScript;
 public class Base {
 	WebDriver driver;
 	jScript js = new jScript();
-	
+
 	///// CONSTRUCTOR/////
 	public Base(WebDriver driver) {
 		this.driver = driver;
@@ -59,6 +59,10 @@ public class Base {
 	    	System.out.println("Element NO exist");
 	    	return false;
 	    }
+	}
+	public void navegar(WebDriver driver, String url) {
+		driver.get(url);
+		js.waitForPageToLoad(driver);
 	}
 	
 }

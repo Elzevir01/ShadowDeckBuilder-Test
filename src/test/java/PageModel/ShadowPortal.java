@@ -25,11 +25,7 @@ public class ShadowPortal extends Base{
 	@FindBy(css = "li.top-slider-list:nth-child(6) > div:nth-child(3) > a")
 	WebElement uriasbuildDeck;
 
-	// ---desplegable deckbuilder->code---//
-	@FindBy(css = "li.bl-navi-menu-item:nth-child(3)")
-	WebElement deckBuilder;
-	@FindBy(css = ".js-jump-to-hash")
-	WebElement deckCode;
+	
 
 	///// CONSTRUCTOR/////
 	public ShadowPortal(WebDriver driver) {
@@ -52,10 +48,6 @@ public class ShadowPortal extends Base{
 		clickElement(driver, urias);//driver, 
 		clickElement(driver, uriasbuildDeck);//driver,
 		Thread.sleep(4000);
-	}
-	public void portalCode() {
-		cursorTo(driver, deckBuilder);//driver, 
-		clickElement(driver, deckCode);//driver, 
 	}
 	public void checkLogo() {
 		checkElement(logo);

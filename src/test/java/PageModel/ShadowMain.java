@@ -22,9 +22,9 @@ public class ShadowMain extends PageModel.Base {
 		   
 	   }
 	   
-	   /*public ShadowMain() {
+	   public ShadowMain() {
 		   
-	   }*/
+	   }
 	   
 	   /////METODOS/////
 	  

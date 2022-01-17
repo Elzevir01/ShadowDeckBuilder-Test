@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import Js.jScript;
 
-public class ShadowCode {
+public class ShadowCode extends PageModel.Base{
 
 	WebDriver driver;
 	jScript js = new jScript();
@@ -31,15 +31,12 @@ public class ShadowCode {
 	}
 
 	////// METODOS /////
-	public void code() {
+	public void codeConfirm() {
 		js.highLight(driver, code);
-		code.click();
-
-	}
-
-	public void aceptar() {
+		sendKey(driver, code, "tglh");
 		js.highLight(driver, aceptar);
 		aceptar.click();
 		js.waitForPageToLoad(driver);
 	}
+
 }

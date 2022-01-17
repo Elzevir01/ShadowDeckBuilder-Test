@@ -13,7 +13,6 @@ import PageModel.ShadowMain;
 import PageModel.ShadowPortal;
 import PageModel.ShadowCode;
 
-import Data.DataP;
 import Data.DataC;
 
 import Driver.BrowserFactory;
@@ -22,15 +21,14 @@ import Driver.DriverFactory;
 @Test
 public class TestDeckBuild {
 	
+	String url = "https://shadowverse-portal.com/deck/3.6.78Hw2.78Hw2.78Hw2.7JkqI.7JkqI.7JkqI.7C8VI.7C8VI.7C8VI.7NYU2.7NYU2.7NYU2.7JpyQ.7JpyQ.7JpyQ.7G1X6.7G1X6.7G1X6.7Jrfy.7Jrfy.7Jrfy.78Moi.78Moi.7F_4Y.7F_4Y.7JmnI.7JmnI.7JmnI.7FwCM.7FwCM.7FwCM.78PEy.78PEy.7G1Wy.7G1Wy.7JmnS.7JmnS.7JmnS.7Jrfo.7JkLM?lang=en";
 	WebDriver driver;
 	BrowserFactory bf = new BrowserFactory();
-	
-	static DataP dp;
 
 	ShadowMain sm;
 	ShadowPortal sp;
 	ShadowDeck sd;
-	ShadowCode sc;/// posterior
+	ShadowCode sc;// posterior
 	
 	@Test(priority=1)
 	public void test_1_Navegacion() throws InterruptedException {
@@ -63,12 +61,20 @@ public class TestDeckBuild {
 		
 		for(int i=0;i<numero;i++) {
 			sd.clickCarta(driver, carta);
-			
 		}
-	}
-	@Test(priority=3)
-	public void test_3_Code() {
 		
+	}
+	
+	@Test(priority=3)
+	public void test_3_Code() throws InterruptedException {
+		//deck code en tempo storm tglh
+		//sd.navegar(driver, url);
+		//--- menu build con codigo ---//
+		sd.deckCodeMenu();
+		
+		// ---deck Code Check---//
+		/*sc = new ShadowCode(driver);
+		sc.codeConfirm();*/
 	}
 	
 	@BeforeClass

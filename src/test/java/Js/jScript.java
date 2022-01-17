@@ -12,12 +12,12 @@ public class jScript {
 	/////ELEMENTO SELECCIONADO EN ROJO/////
 	public boolean highLight(WebDriver driver, WebElement element) {
 		js = (JavascriptExecutor) driver;
-		for (int iC = 0; iC < 3; iC++) {
+		for (int iC = 0; iC < 1; iC++) {
 			try {
 				js.executeScript("arguments[0].setAttribute('style', 'border: 2px solid red')", element);
-				Thread.sleep(150);
+				Thread.sleep(100);
 				js.executeScript("arguments[0].setAttribute('style', 'border:')", element);
-				Thread.sleep(150);
+				Thread.sleep(100);
 			} catch (Exception e) {
 				System.err.println("JavaScript | Method: hightlight | Exception desc: " + e.getMessage());
 			}

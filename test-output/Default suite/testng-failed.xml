@@ -8,7 +8,6 @@
           <include name="test_2_Construccion" invocation-numbers="2"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="test_1_Navegacion"/>
         </methods>
       </class> <!-- DeckBuildTest.TestDeckBuild -->
     </classes>

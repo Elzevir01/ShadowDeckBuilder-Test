@@ -30,6 +30,12 @@ public class ShadowDeck extends PageModel.Base {
 	@FindBy(css = "div.filter-by-card-info-item:nth-child(3) > ul:nth-child(2) > li:nth-child(1) > span")
 	WebElement tipoTodo;
 
+	// ---desplegable deckbuilder->code---//
+	@FindBy(css = "li.bl-navi-menu-item:nth-child(3)")
+	WebElement deckBuilder;
+	@FindBy(css = ".js-jump-to-hash")
+	WebElement deckCodee;
+
 	///// CONSTRUCTOR/////
 	public ShadowDeck(WebDriver driver) {
 		this.driver = driver;
@@ -38,13 +44,15 @@ public class ShadowDeck extends PageModel.Base {
 
 	public ShadowDeck() {
 	}
-	
+
 	public void formatoIlimitado() throws InterruptedException {
 		clickElement(driver, ilimitado);
 		Thread.sleep(4000);
-		//checkText
+		// checkText
 	}
-	public void guardar() {
-		clickElement(driver, guardarCambios);
+	public void deckCodeMenu() throws InterruptedException {
+		cursorTo(driver, deckBuilder);
+		clickElement(driver, deckBuilder);
+		Thread.sleep(2000);
 	}
 }
