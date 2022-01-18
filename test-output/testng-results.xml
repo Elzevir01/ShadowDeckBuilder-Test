@@ -2,86 +2,38 @@
 <testng-results ignored="0" total="17" passed="16" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-16T22:04:20 ART" name="Default suite" finished-at="2022-01-16T22:05:12 ART" duration-ms="51899">
+  <suite started-at="2022-01-17T20:31:53 ART" name="Default suite" finished-at="2022-01-17T20:33:02 ART" duration-ms="69210">
     <groups>
     </groups>
-    <test started-at="2022-01-16T22:04:20 ART" name="Default test" finished-at="2022-01-16T22:05:12 ART" duration-ms="51899">
+    <test started-at="2022-01-17T20:31:53 ART" name="Default test" finished-at="2022-01-17T20:33:02 ART" duration-ms="69210">
       <class name="DeckBuildTest.TestDeckBuild">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:04:20 ART" name="setUp" finished-at="2022-01-16T22:04:26 ART" duration-ms="5446" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:31:53 ART" name="setUp" finished-at="2022-01-17T20:32:03 ART" duration-ms="10233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test_1_Navegacion()[pri:1, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:04:26 ART" name="test_1_Navegacion" finished-at="2022-01-16T22:04:57 ART" duration-ms="30913" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_1_Navegacion -->
-        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:04:57 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-16T22:04:58 ART" duration-ms="1037" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_119611010.png?202216151']]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_2_Construccion -->
-        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:04:58 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-16T22:04:59 ART" duration-ms="1001" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122613010.png?202216151']]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_2_Construccion -->
-        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:04:59 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-16T22:04:59 ART" duration-ms="33" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_118611010.png?202216151']]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="test_1_Navegacion()[pri:1, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:03 ART" name="test_1_Navegacion" finished-at="2022-01-17T20:32:33 ART" duration-ms="29942" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_118611010.png?202216151']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Rotación']"}
   (Session info: chrome=97.0.4692.71)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'elzevir-N56VB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-46-generic', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d3129e11f60dafc8f907abf9d39b00cc, findElement {using=xpath, value=//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_118611010.png?202216151']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.fnn6Gj}, goog:chromeOptions: {debuggerAddress: localhost:42791}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42791/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d3129e11f60dafc8f907abf9d39b00cc]]>
+Command: [8440ce8e036718e47202e3cf4bdd3371, findElement {using=xpath, value=//p[text()='Rotación']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.QXLGjg}, goog:chromeOptions: {debuggerAddress: localhost:34599}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34599/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8440ce8e036718e47202e3cf4bdd3371]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_118611010.png?202216151']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Rotación']"}
   (Session info: chrome=97.0.4692.71)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'elzevir-N56VB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-46-generic', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d3129e11f60dafc8f907abf9d39b00cc, findElement {using=xpath, value=//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_118611010.png?202216151']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.fnn6Gj}, goog:chromeOptions: {debuggerAddress: localhost:42791}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42791/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d3129e11f60dafc8f907abf9d39b00cc
+Command: [8440ce8e036718e47202e3cf4bdd3371, findElement {using=xpath, value=//p[text()='Rotación']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.QXLGjg}, goog:chromeOptions: {debuggerAddress: localhost:34599}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34599/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8440ce8e036718e47202e3cf4bdd3371
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -98,8 +50,11 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at PageModel.Base.clickCarta(Base.java:35)
-at DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:63)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+at PageModel.ShadowDeck.checkClickIlimitado(ShadowDeck.java:59)
+at DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:53)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -133,8 +88,56 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- test_1_Navegacion -->
+        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:33 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-17T20:32:35 ART" duration-ms="1838" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_119611010.png?202216151']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- test_2_Construccion -->
-        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:04:59 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-16T22:05:00 ART" duration-ms="941" status="PASS">
+        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:35 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-17T20:32:37 ART" duration-ms="2204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122613010.png?202216151']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_2_Construccion -->
+        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:37 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-17T20:32:40 ART" duration-ms="2506" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_118611010.png?202216151']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_2_Construccion -->
+        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:40 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-17T20:32:42 ART" duration-ms="2145" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -150,7 +153,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2_Construccion -->
-        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:05:00 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-16T22:05:01 ART" duration-ms="1279" status="PASS">
+        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:42 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-17T20:32:44 ART" duration-ms="1961" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -166,7 +169,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2_Construccion -->
-        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:05:01 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-16T22:05:02 ART" duration-ms="1046" status="PASS">
+        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:44 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-17T20:32:46 ART" duration-ms="1874" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -182,7 +185,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2_Construccion -->
-        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:05:02 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-16T22:05:03 ART" duration-ms="1026" status="PASS">
+        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:46 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-17T20:32:47 ART" duration-ms="1850" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -198,7 +201,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2_Construccion -->
-        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:05:03 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-16T22:05:04 ART" duration-ms="972" status="PASS">
+        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:47 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-17T20:32:49 ART" duration-ms="2022" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -214,7 +217,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2_Construccion -->
-        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:05:04 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-16T22:05:05 ART" duration-ms="638" status="PASS">
+        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:50 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-17T20:32:51 ART" duration-ms="1243" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -230,7 +233,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2_Construccion -->
-        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:05:05 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-16T22:05:06 ART" duration-ms="680" status="PASS">
+        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:51 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-17T20:32:52 ART" duration-ms="1203" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -246,7 +249,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2_Construccion -->
-        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:05:06 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-16T22:05:07 ART" duration-ms="978" status="PASS">
+        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:52 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-17T20:32:54 ART" duration-ms="2037" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -262,7 +265,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2_Construccion -->
-        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:05:07 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-16T22:05:08 ART" duration-ms="936" status="PASS">
+        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:54 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-17T20:32:56 ART" duration-ms="2278" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -278,7 +281,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2_Construccion -->
-        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:05:08 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-16T22:05:08 ART" duration-ms="372" status="PASS">
+        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:56 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-17T20:32:57 ART" duration-ms="789" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -294,7 +297,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2_Construccion -->
-        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:05:08 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-16T22:05:09 ART" duration-ms="653" status="PASS">
+        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:57 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-17T20:32:58 ART" duration-ms="1398" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -310,7 +313,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2_Construccion -->
-        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:05:09 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-16T22:05:10 ART" duration-ms="948" status="PASS">
+        <test-method signature="test_2_Construccion(java.lang.String,int)[pri:2, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:32:58 ART" name="test_2_Construccion" data-provider="deckCards" finished-at="2022-01-17T20:33:01 ART" duration-ms="2436" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -326,11 +329,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2_Construccion -->
-        <test-method signature="test_3_Code()[pri:3, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:05:10 ART" name="test_3_Code" finished-at="2022-01-16T22:05:12 ART" duration-ms="2694" status="PASS">
+        <test-method signature="test_3_Code()[pri:3, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:33:01 ART" name="test_3_Code" finished-at="2022-01-17T20:33:02 ART" duration-ms="802" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_3_Code -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-16T22:05:12 ART" name="tearDown" finished-at="2022-01-16T22:05:12 ART" duration-ms="135" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DeckBuildTest.TestDeckBuild@3d246ea3]" started-at="2022-01-17T20:33:02 ART" name="tearDown" finished-at="2022-01-17T20:33:02 ART" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

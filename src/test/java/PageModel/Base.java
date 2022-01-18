@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Js.jScript;
 
@@ -34,7 +36,11 @@ public class Base {
 	public void clickCarta(WebDriver driver, String carta) throws InterruptedException {
 		WebElement crd = driver.findElement(By.xpath(carta));
 		js.moveyhightlight(driver, crd);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(carta)));
+		if(crd.isDisplayed()) {
 		crd.click();
+		}
 	}
 	public void clickExtLink(WebDriver driver, WebElement elemento) {//WebDriver driver,
 		js.moveyhightlight(driver, elemento);

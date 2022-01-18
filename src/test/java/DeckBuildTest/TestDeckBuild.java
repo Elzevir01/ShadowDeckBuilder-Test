@@ -49,8 +49,8 @@ public class TestDeckBuild {
 		sp.portalUrias();
 		// ---deck builder---//
 		sd = new ShadowDeck(driver);
-		sd.formatoIlimitado();
-		
+		//sd.formatoIlimitado();
+		sd.checkClickIlimitado();
 	}
 	@Test(priority=2, dataProvider="deckCards",dataProviderClass=DataC.class)
 	public void test_2_Construccion(String carta, int numero ) throws InterruptedException {
@@ -70,7 +70,10 @@ public class TestDeckBuild {
 		//deck code en tempo storm tglh
 		//sd.navegar(driver, url);
 		//--- menu build con codigo ---//
-		sd.deckCodeMenu();
+		
+		//sd.deckCodeMenu();
+		url = "https://shadowverse-portal.com/deckbuilder/classes?lang=es";
+		sd.navegar(driver, url);
 		
 		// ---deck Code Check---//
 		/*sc = new ShadowCode(driver);

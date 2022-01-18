@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jan 16 22:04:20 ART 2022</td>
+<td>Started on:</td><td>Mon Jan 17 20:31:53 ART 2022</td>
 </tr>
-<tr><td>Total time:</td><td>51 seconds (51899 ms)</td>
+<tr><td>Total time:</td><td>69 seconds (69210 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_118611010.png?202216151'], 3</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@src=&apos;https://shadowverse-portal.com/image/card/phase2/common/C/C_118611010.png?202216151&apos;]&quot;}
+<td title='DeckBuildTest.TestDeckBuild.test_1_Navegacion()'><b>test_1_Navegacion</b><br>Test class: DeckBuildTest.TestDeckBuild</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;Rotación&apos;]&quot;}
   (Session info: chrome=97.0.4692.71)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;elzevir-N56VB&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-46-generic&apos;, java.version: &apos;16.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d3129e11f60dafc8f907abf9d39b00cc, findElement {using=xpath, value=//img[@src=&apos;https://shadowverse-portal.com/image/card/phase2/common/C/C_118611010.png?202216151&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.fnn6Gj}, goog:chromeOptions: {debuggerAddress: localhost:42791}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42791/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d3129e11f60dafc8f907abf9d39b00cc
+Command: [8440ce8e036718e47202e3cf4bdd3371, findElement {using=xpath, value=//p[text()=&apos;Rotación&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.QXLGjg}, goog:chromeOptions: {debuggerAddress: localhost:34599}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34599/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8440ce8e036718e47202e3cf4bdd3371
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -101,8 +101,11 @@ Session ID: d3129e11f60dafc8f907abf9d39b00cc
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at PageModel.Base.clickCarta(Base.java:35)
-	at DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:63)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at PageModel.ShadowDeck.checkClickIlimitado(ShadowDeck.java:59)
+	at DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,16 +134,16 @@ Session ID: d3129e11f60dafc8f907abf9d39b00cc
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace734518153", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace734518153'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@src=&apos;https://shadowverse-portal.com/image/card/phase2/common/C/C_118611010.png?202216151&apos;]&quot;}
+</pre></div><a href='#' onClick='toggleBox("stack-trace1137013089", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1137013089'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;Rotación&apos;]&quot;}
   (Session info: chrome=97.0.4692.71)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;elzevir-N56VB&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-46-generic&apos;, java.version: &apos;16.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d3129e11f60dafc8f907abf9d39b00cc, findElement {using=xpath, value=//img[@src=&apos;https://shadowverse-portal.com/image/card/phase2/common/C/C_118611010.png?202216151&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.fnn6Gj}, goog:chromeOptions: {debuggerAddress: localhost:42791}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42791/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d3129e11f60dafc8f907abf9d39b00cc
+Command: [8440ce8e036718e47202e3cf4bdd3371, findElement {using=xpath, value=//p[text()=&apos;Rotación&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /tmp/.com.google.Chrome.QXLGjg}, goog:chromeOptions: {debuggerAddress: localhost:34599}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:34599/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8440ce8e036718e47202e3cf4bdd3371
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -157,8 +160,11 @@ Session ID: d3129e11f60dafc8f907abf9d39b00cc
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at PageModel.Base.clickCarta(Base.java:35)
-	at DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:63)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at PageModel.ShadowDeck.checkClickIlimitado(ShadowDeck.java:59)
+	at DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -188,7 +194,7 @@ Session ID: d3129e11f60dafc8f907abf9d39b00cc
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
+<td>29</td>
 <td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -199,37 +205,27 @@ Session ID: d3129e11f60dafc8f907abf9d39b00cc
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='DeckBuildTest.TestDeckBuild.test_3_Code()'><b>test_3_Code</b><br>Test class: DeckBuildTest.TestDeckBuild</td>
+<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_121631010.png?202216151'], 2</td>
+<td></td>
+<td>1</td>
+<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
+<tr>
+<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122613010.png?202216151'], 3</td>
+<td></td>
+<td>2</td>
+<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
+<tr>
+<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122621020.png?202216151'], 3</td>
+<td></td>
+<td>2</td>
+<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
+<tr>
+<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122641020.png?202216151'], 3</td>
 <td></td>
 <td>2</td>
 <td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
 <tr>
 <td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_121641020.png?202216151'], 2</td>
-<td></td>
-<td>0</td>
-<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
-<tr>
-<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_121631010.png?202216151'], 2</td>
-<td></td>
-<td>0</td>
-<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
-<tr>
-<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122634010.png?202216151'], 3</td>
-<td></td>
-<td>1</td>
-<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
-<tr>
-<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_120621010.png?202216151'], 3</td>
-<td></td>
-<td>0</td>
-<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
-<tr>
-<td title='DeckBuildTest.TestDeckBuild.test_1_Navegacion()'><b>test_1_Navegacion</b><br>Test class: DeckBuildTest.TestDeckBuild</td>
-<td></td>
-<td>30</td>
-<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
-<tr>
-<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_100614020.png?202216151'], 3</td>
 <td></td>
 <td>1</td>
 <td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
@@ -239,27 +235,27 @@ Session ID: d3129e11f60dafc8f907abf9d39b00cc
 <td>1</td>
 <td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
 <tr>
-<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122621020.png?202216151'], 3</td>
-<td></td>
-<td>0</td>
-<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
-<tr>
-<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_119631020.png?202216151'], 2</td>
-<td></td>
-<td>0</td>
-<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
-<tr>
-<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122641020.png?202216151'], 3</td>
-<td></td>
-<td>0</td>
-<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
-<tr>
 <td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122621010.png?202216151'], 3</td>
 <td></td>
+<td>2</td>
+<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
+<tr>
+<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_121611030.png?202216151'], 3</td>
+<td></td>
+<td>2</td>
+<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
+<tr>
+<td title='DeckBuildTest.TestDeckBuild.test_3_Code()'><b>test_3_Code</b><br>Test class: DeckBuildTest.TestDeckBuild</td>
+<td></td>
 <td>0</td>
 <td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
 <tr>
-<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122613010.png?202216151'], 3</td>
+<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122634010.png?202216151'], 3</td>
+<td></td>
+<td>1</td>
+<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
+<tr>
+<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_100614020.png?202216151'], 3</td>
 <td></td>
 <td>1</td>
 <td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
@@ -269,9 +265,19 @@ Session ID: d3129e11f60dafc8f907abf9d39b00cc
 <td>0</td>
 <td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
 <tr>
-<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_121611030.png?202216151'], 3</td>
+<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_120621010.png?202216151'], 3</td>
 <td></td>
-<td>0</td>
+<td>2</td>
+<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
+<tr>
+<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_119631020.png?202216151'], 2</td>
+<td></td>
+<td>1</td>
+<td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
+<tr>
+<td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_118611010.png?202216151'], 3</td>
+<td></td>
+<td>2</td>
 <td>DeckBuildTest.TestDeckBuild@3d246ea3</td></tr>
 <tr>
 <td title='DeckBuildTest.TestDeckBuild.test_2_Construccion()'><b>test_2_Construccion</b><br>Test class: DeckBuildTest.TestDeckBuild<br>Parameters: //img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_119611010.png?202216151'], 3</td>

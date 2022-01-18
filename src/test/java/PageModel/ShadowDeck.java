@@ -11,12 +11,12 @@ public class ShadowDeck extends PageModel.Base {
 	///// ELEMENTOS WEB/////
 	@FindBy(css = ".bl-header-logo-image")
 	WebElement logo;
-	@FindBy(css = ".is-format-1")
+	@FindBy(xpath = "//li[text()='Ilimitado']")
 	WebElement ilimitado;
-	@FindBy(css = ".deckbuilder-deck-title-format")
-	WebElement checkFormato;
-	@FindBy(css = ".deckbuilder-deck-save-button")
-	WebElement guardarCambios;
+	@FindBy(xpath = "//p[text()='Ilimitado']")
+	WebElement checkIlimitado;
+	@FindBy(xpath = "//p[text()='Rotación']")
+	WebElement checkRotacion;
 
 	// ---rareza dew carta---//
 	@FindBy(css = "li.is-wide:nth-child(5) > span")
@@ -55,4 +55,12 @@ public class ShadowDeck extends PageModel.Base {
 		clickElement(driver, deckBuilder);
 		Thread.sleep(2000);
 	}
+	public void checkClickIlimitado() throws InterruptedException {///////////////try
+		while(checkRotacion.isDisplayed()) {
+			clickElement(driver, ilimitado);
+			Thread.sleep(2000);
+		}
+		
+	}
+	//ExpectedConditions.visibilityOfElementLocated(By.id("id1"))
 }
