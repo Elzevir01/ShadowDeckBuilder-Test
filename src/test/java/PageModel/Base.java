@@ -36,6 +36,8 @@ public class Base {
 	public void clickCarta(WebDriver driver, String carta) throws InterruptedException {
 		WebElement crd = driver.findElement(By.xpath(carta));
 		js.moveyhightlight(driver, crd);
+		
+		@SuppressWarnings("deprecation")
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(carta)));
 		if(crd.isDisplayed()) {

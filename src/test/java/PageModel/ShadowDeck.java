@@ -35,6 +35,10 @@ public class ShadowDeck extends PageModel.Base {
 	WebElement deckBuilder;
 	@FindBy(css = ".js-jump-to-hash")
 	WebElement deckCodee;
+	
+	// --- check de 40 cartas ---//
+	@FindBy(css =".deckbuilder-deck-count-total")
+	WebElement checkTotal;
 
 	///// CONSTRUCTOR/////
 	public ShadowDeck(WebDriver driver) {
@@ -56,11 +60,16 @@ public class ShadowDeck extends PageModel.Base {
 		Thread.sleep(2000);
 	}
 	public void checkClickIlimitado() throws InterruptedException {///////////////try
-		while(checkRotacion.isDisplayed()) {
+		if(checkElement(checkRotacion)) {
 			clickElement(driver, ilimitado);
 			Thread.sleep(2000);
 		}
 		
 	}
-	//ExpectedConditions.visibilityOfElementLocated(By.id("id1"))
+	public void checkTotal() {
+		System.out.println("total de cartas ingresadas: "+checkTotal.getText() );
+		if(checkTotal.getText()=="40") {
+			System.out.println("Las cuarenta cartas ingresadas correctamente");
+		}
+	}
 }
