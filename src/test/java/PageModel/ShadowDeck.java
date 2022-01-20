@@ -59,12 +59,11 @@ public class ShadowDeck extends PageModel.Base {
 		clickElement(driver, deckBuilder);
 		Thread.sleep(2000);
 	}
-	public void checkClickIlimitado() throws InterruptedException {///////////////try
-		if(checkElement(checkRotacion)) {
-			clickElement(driver, ilimitado);
-			Thread.sleep(2000);
-		}
-		
+	public void ilimitado() {
+		clickElement(driver, ilimitado);
+	}
+	public boolean checkClickIlimitado() throws InterruptedException {///////////////try
+		return checkElement(checkRotacion);
 	}
 	public void checkTotal() {
 		System.out.println("total de cartas ingresadas: "+checkTotal.getText() );
