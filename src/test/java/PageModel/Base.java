@@ -23,37 +23,28 @@ public class Base {
 	}
 	
 	////METODOS/////
-	public void clickElement(WebDriver driver, WebElement elemento) {//WebDriver driver,
+	public void clickElement(WebDriver driver, WebElement elemento) {
 		js.highLight(driver, elemento);
         elemento.click();
-        js.waitForPageToLoad(driver);
     }
-	public void clickElementFocus( WebDriver driver, WebElement elemento) {//WebDriver driver,
+	public void clickElementFocus( WebDriver driver, WebElement elemento) {
 		js.moveyhightlight(driver, elemento);
-		elemento.click();
-		js.waitForPageToLoad(driver);
+		elemento.click();	
 	}
 	public void clickCarta(WebDriver driver, String carta) throws InterruptedException {
 		WebElement crd = driver.findElement(By.xpath(carta));
 		js.moveyhightlight(driver, crd);
 		
 		@SuppressWarnings("deprecation")
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(carta)));
+		
+		
 		if(crd.isDisplayed()) {
 		crd.click();
 		}
 	}
-	public void clickExtLink(WebDriver driver, WebElement elemento) {//WebDriver driver,
-		js.moveyhightlight(driver, elemento);
-        elemento.click();
-        js.waitForPageToLoad(driver);
-    }
-	public void sendKey(WebDriver driver, WebElement elemento, String texto) {//WebDriver driver, 
-		js.highLight(driver, elemento);
-		elemento.sendKeys(texto);
-	}
-	public void cursorTo(WebDriver driver, WebElement elemento) {//WebDriver driver, 
+	public void cursorTo(WebDriver driver, WebElement elemento) {
 		js.highLight(driver, elemento);
 		new Actions(driver).moveToElement(elemento).perform();
 	}
@@ -70,6 +61,15 @@ public class Base {
 	}
 	public void navegar(WebDriver driver, String url) {
 		driver.get(url);
+		js.waitForPageToLoad(driver);
+	}
+	public void esperarxpath(WebDriver driver, String elemento) {
+		@SuppressWarnings("deprecation")
+		WebDriverWait wait = new WebDriverWait(driver, 15);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elemento)));
+		
+	}
+	public void esperarWeb() {
 		js.waitForPageToLoad(driver);
 	}
 	

@@ -1,15 +1,15 @@
 package DeckBuildTest;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.AfterTest;
 
 import java.util.ArrayList;
 
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-import java.awt.AWTException;
-
+import org.apache.log4j.BasicConfigurator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
 import PageModel.ShadowDeck;
@@ -17,111 +17,126 @@ import PageModel.ShadowMain;
 import PageModel.ShadowPortal;
 
 import io.qameta.allure.Description;
-import io.qameta.allure.Step;
-
-import org.testng.log4testng.Logger;
-
-import PageModel.ShadowCode;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Link;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 
 import Data.DataC;
 
-import Driver.BrowserFactory;
+import Driver.BrowserFactoryCF;
 import Driver.DriverFactory;
 
-@Test
+@Epic("com.shadowverse")
 public class TestDeckBuild {
-	
-	String url = "https://shadowverse-portal.com/deck/3.6.78Hw2.78Hw2.78Hw2.7JkqI.7JkqI.7JkqI.7C8VI.7C8VI.7C8VI.7NYU2.7NYU2.7NYU2.7JpyQ.7JpyQ.7JpyQ.7G1X6.7G1X6.7G1X6.7Jrfy.7Jrfy.7Jrfy.78Moi.78Moi.7F_4Y.7F_4Y.7JmnI.7JmnI.7JmnI.7FwCM.7FwCM.7FwCM.78PEy.78PEy.7G1Wy.7G1Wy.7JmnS.7JmnS.7JmnS.7Jrfo.7JkLM?lang=en";
-	WebDriver driver;
-	//private static final Log = org.apache.logging.log4j.LogManager.getLogger(TestDeckBuild.class);
-	Logger Log = Logger.getLogger(TestDeckBuild.class);
-	//private static Logger logJava = org.testng.log4testng.Logger.getLogger(TestDeckBuild.class);
-	
-	BrowserFactory bf = new BrowserFactory();
 
+	WebDriver driver;
+	String url;
+	//private static Logger Log = LogManager.getLogger(TestDeckBuild.class);
+	//Logger Log = Logger.getLogger(TestDeckBuild.class);
+	private static Logger Log = LogManager.getLogger(TestDeckBuild.class);
+	BrowserFactoryCF bf;// = new BrowserFactory();
 	ShadowMain sm;
 	ShadowPortal sp;
 	ShadowDeck sd;
-	ShadowCode sc;
-	
-	@Test(priority=1)
+
+	@Severity(SeverityLevel.NORMAL)
+	@Feature("Shadowverse Deck Build")
+	@Story("1) Ingreso a la pagina principal de shadowverse")
+	@Link(name = "https://shadowverse.com/", url = "https://shadowverse.com/")
+	@Test(priority = 1)
 	@Description("Navega desde Shadowverse.com hacia shadowverse-portal.com/deckbuilder/")
-	@Step("step: 1")
 	public void test_1_Navegacion() throws InterruptedException {
-		
+
 		// ---web oficcial de shadowverse---//
+		BasicConfigurator.configure();
 		Log.info("Ingresando a Shadowverse.com");
 		sm = new ShadowMain(driver);
+		url = "https://shadowverse.com/";
+		sm.navegar(driver, url);
 		sm.checkLogo();
 		Log.info("Click en boton de Portal");
 		sm.portalClick();
 
-		// ---cambiar de pestaña a portal---//
-		Log.info("Cambiando a la pestaña portal");
+		// ---cambiar de pesta�a a portal---//
+		Log.info("Cambiando a la pesta�a portal");
 		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs2.get(1));
 
-		// ---pestaña portal---//
+		// ---pesta�a portal---//
 		sp = new ShadowPortal(driver);
-		//sp.checkLogo();//////
-		Log.info("Cambiando a idioma español");
+		sp.esperarWeb();
+		Thread.sleep(3000);
+		// sp.checkLogo();//////
+		Log.info("Cambiando a idioma espa�ol");
 		sp.portalEspañol();
+		sp.esperarWeb();
 		Log.info("Seleccionando creador de mazo Urias");
 		sp.portalUrias();
+		sp.esperarWeb();
 		
 		// ---deck builder---//
 		sd = new ShadowDeck(driver);
 		Log.info("Verificando y seleccionando formato ilimitado");
-		sd.checkClickIlimitado();
-		sd.ilimitado();
-	}
-	@Test(priority=2, dataProvider="deckCards",dataProviderClass=DataC.class)
-	@Description("Localizando cartas del deck y agregando al mazo")
-	@Step("step: 2")
-	public void test_2_Construccion(String carta, int numero ) throws InterruptedException {
+		if(sd.checkRotacion()) {
+			sd.ilimitado();
+			sd.esperarIlimitado();
+		}
+		sd.esperarWeb();
 		
-		// ---deck builder---//
-		for(int i=0;i<numero;i++) {
+		
+	}
+	@Severity(SeverityLevel.CRITICAL)
+	@Feature("Shadowverse Deck Build")
+	@Story("2) Seleccion de las cartas para agregar al deck")
+	@Link(name = "https://shadowverse-portal.com/deckbuilder/create", url = "https://shadowverse-portal.com/deckbuilder/create/6?lang=es")
+	@Test(priority = 2, dataProvider = "deckCards", dataProviderClass = DataC.class)
+	@Description("Localizando cartas del deck y agregando al mazo")
+	public void test_2_Construccion(String carta, int numero, String nombre) throws InterruptedException {
+		
+		//---esperando primera carta---//
+		Log.info("Buscando y agregando: "+nombre+" :: numero de veces: "+numero+"");
+		
+		// ---generar mazo---//
+		for (int i = 0; i < numero; i++) {
 			sd.clickCarta(driver, carta);
 		}
-		
+
 	}
-	
-	@Test(priority=3)
+
+	@Severity(SeverityLevel.TRIVIAL)
+	@Feature("Shadowverse Deck Build")
+	@Story("3) Check de la cantidad de cartas agregadas")
+	@Link(name = "https://shadowverse-portal.com/deckbuilder/",
+	url = "https://shadowverse-portal.com/deckbuilder/create/6?lang=es")
+	@Test(priority = 3)
 	@Description("Checkeo de la cantidad de cartas agregadas(40)")
-	@Step("step: 3")
-	public void test_3_Code() throws InterruptedException{
+	public void test_3_Code() throws InterruptedException {
 		
+		///--verificacion del mazo--///
 		Log.info("Verificando el total de cartas en el mazo");
-		sd.checkTotal();
-		sd.navegar(driver, url);
-		Thread.sleep(1000);
-		Robot robot;
-		try {
-			robot = new Robot();
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);
-		} catch (AWTException e) {
-			e.printStackTrace();
-		}
-		
+		Log.info("Cantidad de cartas: "+sd.checkTotal());
 	}
 	
-
-	@BeforeClass
-	public void setUp() {
-
-		DriverFactory.getInstance().setDriver(bf.createBrowserIntance("CHROME"));
+	@BeforeTest
+	@Parameters({"browser", "nodeUrl"})
+	public void setUp(String browser, String nodeUrl) {
+		try {
+		bf = new BrowserFactoryCF();
+		DriverFactory.getInstance().setDriver(bf.setDriver(browser, nodeUrl));
 		driver = DriverFactory.getInstance().getDriver();
+		}catch(Exception exc){
+			Log.error("Causa : "+exc.getCause());
+			Log.error("Mensaje : "+exc.getMessage());
+			exc.printStackTrace();
+		}
 	}
 
-
-	@AfterClass
+	@AfterTest
 	public void tearDown() {
-		
 		bf.removeDriver();
 	}
-	
-        
 
 }

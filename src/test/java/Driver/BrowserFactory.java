@@ -10,7 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BrowserFactory {
 	WebDriver driver = null;
 	
-	public WebDriver createBrowserIntance(String browser) {
+	public WebDriver setDriver(String browser) {
 		
 
 		switch (browser.toString().toUpperCase()) {
@@ -28,15 +28,14 @@ public class BrowserFactory {
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
-		driver.get("https://shadowverse.com/");
 		
 		return driver;
 	}
 
-	public WebDriver getInstance() {
+	/*public WebDriver getInstance() {
 		// TODO Auto-generated method stub
 		return null;
-	}
+	}*/
 	public void removeDriver() {
 		driver.close();
 		driver.quit();

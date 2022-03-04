@@ -4,89 +4,56 @@ import org.testng.annotations.DataProvider;
 
 public class DataC {
 	///// WEB ELEMENT CARTA/////
-	String VampiroCarmesí = "//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_119611010.png?202216151']";
+	String VampiroCarmesí = "//img[contains(@src, 'C_119611010.png')]";
 	// x3
-	String ColgantedeSangreFresca = "//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122613010.png?202216151']";
+	String ColgantedeSangreFresca = "//img[contains(@src, 'C_122613010.png')]";
 	// x3
-	String LicántropaPeleona = "//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_118611010.png?202216151']";
+	String LicantropaPeleona = "//img[contains(@src, 'C_118611010.png')]";
 	// x3
-	String DiabladelosAccesorios = "//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_120621010.png?202216151']";
+	String DiabladelosAccesorios = "//img[contains(@src, 'C_120621010.png')]";
 	// x3
-	String GarraAfilada = "//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_100614020.png?202216151']";
+	String GarraAfilada = "//img[contains(@src, 'C_100614020.png')]";
 	// x3
-	String OrdenOscura = "//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122634010.png?202216151']";
+	String OrdenOscura = "//img[contains(@src, 'C_122634010.png')]";
 	// x3
-	String UriasVampirodelFin = "//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_121641030.png?202216151']";
+	String UriasVampirodelFin = "//img[contains(@src, 'C_121641030.png')]";
 	// x3
-	String VampiradelCieloNocturno = "//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122641020.png?202216151']";
+	String VampiradelCieloNocturno = "//img[contains(@src, 'C_122641020.png')]";
 	// x3
-	String CaballeraOscuradelPurgatorio = "//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_119631020.png?202216151']";
+	String CaballeraOscuradelPurgatorio = "//img[contains(@src, 'C_119631020.png')]";
 	// x2
-	String DivaDemoniaca = "//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_121631010.png?202216151']";
+	String DivaDemoniaca = "//img[contains(@src, 'C_121631010.png')]";
 	// x2
-	String DiablaSeñorial = "//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122621010.png?202216151']";
+	String DiablaSeñorial = "//img[contains(@src, 'C_122621010.png')]";
 	// x3
-	String OgrodelaDesolación = "//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_121611030.png?202216151']";
+	String OgrodelaDesolacian = "//img[contains(@src, 'C_121611030.png')]";
 	// x3
-	String XenoDiabolos = "//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_119641020.png?202216151']";
+	String XenoDiabolos = "//img[contains(@src, 'C_119641020.png')]";
 	// x1
-	String GranDemoniodelasFieras = "//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_121641020.png?202216151']";
+	String GranDemoniodelasFieras = "//img[contains(@src, 'C_121641020.png')]";
 	// x2
-	String LoboOscuroTraicionero = "//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122621020.png?202216151']";
+	String LoboOscuroTraicionero = "//img[contains(@src, 'C_122621020.png')]";
 	// x3
 
 	@DataProvider(name = "deckCards")
 	public Object[][] cardData() {
 		return new Object[][] {
-				{ VampiroCarmesí, 3 },
-				{ ColgantedeSangreFresca, 3 },
-				{ LicántropaPeleona, 3 },
-				{ DiabladelosAccesorios, 3 },
-				{ GarraAfilada, 3 },
-				{ OrdenOscura, 3 },
-				{ UriasVampirodelFin, 3 },
-				{ VampiradelCieloNocturno, 3 },
-				{ CaballeraOscuradelPurgatorio, 2 },
-				{ DivaDemoniaca, 2 },
-				{ DiablaSeñorial, 3 },
-				{ OgrodelaDesolación, 3 },
-				{ XenoDiabolos, 1 },
-				{ GranDemoniodelasFieras, 2 },
-				{ LoboOscuroTraicionero, 3 }
+				{ VampiroCarmesí, 3,"Vampiro Carmesí" },
+				{ ColgantedeSangreFresca, 3,"Colgante de Sangre Fresca" },
+				{ LicantropaPeleona, 3,"Lic�ntropa Peleona" },
+				{ DiabladelosAccesorios, 3,"Diabla de los Accesorios" },
+				{ GarraAfilada, 3,"Garra Afilada" },
+				{ OrdenOscura, 3,"Orden Oscura" },
+				{ UriasVampirodelFin, 3,"Urias, Vampiro del Fin" },
+				{ VampiradelCieloNocturno, 3,"Vampira del Cielo Nocturno" },
+				{ CaballeraOscuradelPurgatorio, 2,"Caballera Oscura del Purgatorio" },
+				{ DivaDemoniaca, 2,"Diva Demoniaca" },
+				{ DiablaSeñorial, 3,"Diabla Señorial" },
+				{ OgrodelaDesolacian, 3,"Ogro de la Desolación" },
+				{ XenoDiabolos, 1,"Xeno-Diabolos" },
+				{ GranDemoniodelasFieras, 2,"Gran Demonio de las Fieras" },
+				{ LoboOscuroTraicionero, 3,"Lobo Oscuro Traicionero" }
 			};
 
 	}
 }
-
-/*
- * //Vampiro Carmesí//x3
- * {"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_119611010.png?202216151']"
- * }, //Colgante de Sangre Fresca//x3
- * {"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122613010.png?202216151']"
- * }, //Licántropa Peleona//x3
- * {"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_118611010.png?202216151']"
- * }, //Diabla de los Accesorios//x3
- * {"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_120621010.png?202216151']"
- * }, //Garra Afilada//x3
- * {"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_100614020.png?202216151']"
- * }, //Orden Oscura//x3
- * {"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122634010.png?202216151']"
- * }, //Urias, Vampiro del Fin//x3
- * {"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_121641030.png?202216151']"
- * }, //Vampira del Cielo Nocturno//x3
- * {"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122641020.png?202216151']"
- * }, //Caballera Oscura del Purgatorio//x2
- * {"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_119631020.png?202216151']"
- * }, //Diva Demoniaca//x2
- * {"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_121631010.png?202216151']"
- * }, //Diabla Señorial//x3
- * {"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122621010.png?202216151']"
- * }, //Ogro de la Desolación//x3
- * {"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_121611030.png?202216151']"
- * }, //Xeno-Diabolos//x1
- * {"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_119641020.png?202216151']"
- * }, //Gran Demonio de las Fieras//x2
- * {"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_121641020.png?202216151']"
- * }, //Lobo Oscuro Traicionero//x3
- * {"//img[@src='https://shadowverse-portal.com/image/card/phase2/common/C/C_122621020.png?202216151']"}
- */

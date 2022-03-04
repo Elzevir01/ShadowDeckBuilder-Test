@@ -22,10 +22,6 @@ public class ShadowMain extends PageModel.Base {
 		   
 	   }
 	   
-	   public ShadowMain() {
-		   
-	   }
-	   
 	   /////METODOS/////
 	  
 	   public boolean checkLogo() {

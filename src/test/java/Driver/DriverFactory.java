@@ -2,7 +2,7 @@ package Driver;
 
 import org.openqa.selenium.WebDriver;
 
-public class DriverFactory {
+public class DriverFactory{
 public DriverFactory() {
 		
 	}

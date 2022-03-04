@@ -34,10 +34,6 @@ public class ShadowPortal extends Base{
 
 	}
 
-	/*public ShadowPortal() {
-
-	}*/
-
 	//// METODOS/////
 	public void portalEspañol() throws InterruptedException {
 		cursorTo(driver, lenguaje);//driver, 
@@ -45,12 +41,11 @@ public class ShadowPortal extends Base{
 		Thread.sleep(2000);
 	}
 	public void portalUrias() throws InterruptedException {
-		clickElement(driver, urias);//driver, 
-		clickElement(driver, uriasbuildDeck);//driver,
+		//esperarElement(driver, urias);
+		clickElement(driver, urias);
+		clickElement(driver, uriasbuildDeck);
 		Thread.sleep(4000);
 	}
-	public void checkLogo() {
-		checkElement(logo);
-	}
+	
 	
 }

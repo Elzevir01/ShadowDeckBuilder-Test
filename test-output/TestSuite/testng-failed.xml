@@ -2,14 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="1" parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="1" parallel="tests" name="CHROME(failed)">
-    <parameter name="browser" value="CRHOME"/>
+    <parameter name="browser" value="CHROME"/>
     <parameter name="nodeUrl" value="http://localhost:4444/wd/hub"/>
     <classes>
       <class name="DeckBuildTest.TestDeckBuild">
         <methods>
-          <include name="f"/>
-          <include name="build"/>
-          <include name="afterClass"/>
+          <include name="test_2_Construccion" invocation-numbers="2"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- DeckBuildTest.TestDeckBuild -->
     </classes>
@@ -20,9 +20,9 @@
     <classes>
       <class name="DeckBuildTest.TestDeckBuild">
         <methods>
-          <include name="f"/>
-          <include name="build"/>
-          <include name="afterClass"/>
+          <include name="test_2_Construccion" invocation-numbers="2"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- DeckBuildTest.TestDeckBuild -->
     </classes>

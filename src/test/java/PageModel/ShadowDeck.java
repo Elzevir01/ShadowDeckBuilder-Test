@@ -15,7 +15,7 @@ public class ShadowDeck extends PageModel.Base {
 	WebElement ilimitado;
 	@FindBy(xpath = "//p[text()='Ilimitado']")
 	WebElement checkIlimitado;
-	@FindBy(xpath = "//p[text()='RotaciÃ³n']")
+	@FindBy(xpath = "//p[text()='Rotación']")
 	WebElement checkRotacion;
 
 	// ---rareza dew carta---//
@@ -46,29 +46,21 @@ public class ShadowDeck extends PageModel.Base {
 		PageFactory.initElements(driver, this);
 	}
 
-	public ShadowDeck() {
-	}
-
-	public void formatoIlimitado() throws InterruptedException {
-		clickElement(driver, ilimitado);
-		Thread.sleep(4000);
-		// checkText
-	}
-	public void deckCodeMenu() throws InterruptedException {
-		cursorTo(driver, deckBuilder);
-		clickElement(driver, deckBuilder);
-		Thread.sleep(2000);
-	}
 	public void ilimitado() {
+		try {
 		clickElement(driver, ilimitado);
+		Thread.sleep(3000);
+		}catch(Exception e) {
+			e.getMessage();
+		}
 	}
-	public boolean checkClickIlimitado() throws InterruptedException {///////////////try
+	public boolean checkRotacion() throws InterruptedException {
 		return checkElement(checkRotacion);
 	}
-	public void checkTotal() {
-		System.out.println("total de cartas ingresadas: "+checkTotal.getText() );
-		if(checkTotal.getText()=="40") {
-			System.out.println("Las cuarenta cartas ingresadas correctamente");
-		}
+	public void esperarIlimitado() {
+		esperarxpath(driver, "//p[text()='Ilimitado']");
+	}
+	public String checkTotal() {
+			return checkTotal.getText();
 	}
 }
