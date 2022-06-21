@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import PageModel.ShadowDeck;
@@ -55,8 +56,9 @@ public class TestDeckBuild {
 		Log.info("Ingresando a Shadowverse.com");
 		sm = new ShadowMain(driver);
 		url = "https://shadowverse.com/";
-		sm.navegar(driver, url);
+		sm.navegar(url);
 		sm.checkLogo();
+		sm.clickCookies();
 		Log.info("Click en boton de Portal");
 		sm.portalClick();
 
@@ -94,14 +96,15 @@ public class TestDeckBuild {
 	@Link(name = "https://shadowverse-portal.com/deckbuilder/create", url = "https://shadowverse-portal.com/deckbuilder/create/6?lang=es")
 	@Test(priority = 2, dataProvider = "deckCards", dataProviderClass = DataC.class)
 	@Description("Localizando cartas del deck y agregando al mazo")
-	public void test_2_Construccion(String carta, int numero, String nombre) throws InterruptedException {
+	public void test_2_Construccion(By carta, int numero, String nombre) throws InterruptedException {
 		
 		//---esperando primera carta---//
 		Log.info("Buscando y agregando: "+nombre+" :: numero de veces: "+numero+"");
 		
 		// ---generar mazo---//
 		for (int i = 0; i < numero; i++) {
-			sd.clickCarta(driver, carta);
+			sd.esperarElemento(carta);
+			sd.clickElemento(carta);
 		}
 
 	}

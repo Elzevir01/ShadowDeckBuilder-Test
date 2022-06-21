@@ -9,6 +9,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.remote.CapabilityType;
@@ -57,15 +58,12 @@ public class BrowserFactoryCF {
 			driver = new RemoteWebDriver(new URL(nodeURL), capf);
 
 			break;
-		case "OPERA":
-			OperaOptions capo = new OperaOptions();
-			capo.addArguments("--start-maximized --disable-");
-			capo.setExperimentalOption("useAutomationExtension", false);
-			capo.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-			capo.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
-			capo.setCapability(CapabilityType.PLATFORM, Platform.ANY);
-			capo.getBrowserName();
-			driver = new RemoteWebDriver(new URL(nodeURL), capo);
+		case "EDGE":
+			EdgeOptions cape = new EdgeOptions();
+			cape.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
+			cape.setCapability(CapabilityType.PLATFORM, Platform.ANY);
+			cape.getBrowserName();
+			driver = new RemoteWebDriver(new URL(nodeURL), cape);
 
 			break;
 

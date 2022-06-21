@@ -1677,3 +1677,192 @@ Capabilities {}
 2022-03-04 19:47:02.889 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:100)] - Buscando y agregando: Lobo Oscuro Traicionero :: numero de veces: 3
 2022-03-04 19:47:04.703 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_3_Code(TestDeckBuild.java:119)] - Verificando el total de cartas en el mazo
 2022-03-04 19:47:04.747 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_3_Code(TestDeckBuild.java:120)] - Cantidad de cartas: 37
+2022-06-20 22:38:20.530 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:56)] - Ingresando a Shadowverse.com
+2022-06-20 22:38:20.817 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Vampiro Carmesí :: numero de veces: 3
+2022-06-20 22:38:20.831 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Colgante de Sangre Fresca :: numero de veces: 3
+2022-06-20 22:38:20.842 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Lic�ntropa Peleona :: numero de veces: 3
+2022-06-20 22:38:20.852 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diabla de los Accesorios :: numero de veces: 3
+2022-06-20 22:38:20.861 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Garra Afilada :: numero de veces: 3
+2022-06-20 22:38:20.869 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Orden Oscura :: numero de veces: 3
+2022-06-20 22:38:20.897 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Urias, Vampiro del Fin :: numero de veces: 3
+2022-06-20 22:38:20.904 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Vampira del Cielo Nocturno :: numero de veces: 3
+2022-06-20 22:38:20.910 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Caballera Oscura del Purgatorio :: numero de veces: 2
+2022-06-20 22:38:20.917 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diva Demoniaca :: numero de veces: 2
+2022-06-20 22:38:20.924 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diabla Señorial :: numero de veces: 3
+2022-06-20 22:38:20.930 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Ogro de la Desolación :: numero de veces: 3
+2022-06-20 22:38:20.936 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Xeno-Diabolos :: numero de veces: 1
+2022-06-20 22:38:20.942 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Gran Demonio de las Fieras :: numero de veces: 2
+2022-06-20 22:38:20.951 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Lobo Oscuro Traicionero :: numero de veces: 3
+2022-06-20 22:38:20.964 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_3_Code(TestDeckBuild.java:120)] - Verificando el total de cartas en el mazo
+2022-06-20 22:38:22.104 ERROR [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.setUp(TestDeckBuild.java:132)] - Causa : null
+2022-06-20 22:38:22.105 ERROR [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.setUp(TestDeckBuild.java:133)] - Mensaje : Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+2022-06-20 22:38:22.111 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:56)] - Ingresando a Shadowverse.com
+2022-06-20 22:38:22.120 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Vampiro Carmesí :: numero de veces: 3
+2022-06-20 22:38:22.127 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Colgante de Sangre Fresca :: numero de veces: 3
+2022-06-20 22:38:22.131 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Lic�ntropa Peleona :: numero de veces: 3
+2022-06-20 22:38:22.136 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diabla de los Accesorios :: numero de veces: 3
+2022-06-20 22:38:22.140 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Garra Afilada :: numero de veces: 3
+2022-06-20 22:38:22.164 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Orden Oscura :: numero de veces: 3
+2022-06-20 22:38:22.170 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Urias, Vampiro del Fin :: numero de veces: 3
+2022-06-20 22:38:22.176 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Vampira del Cielo Nocturno :: numero de veces: 3
+2022-06-20 22:38:22.181 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Caballera Oscura del Purgatorio :: numero de veces: 2
+2022-06-20 22:38:22.186 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diva Demoniaca :: numero de veces: 2
+2022-06-20 22:38:22.192 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diabla Señorial :: numero de veces: 3
+2022-06-20 22:38:22.198 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Ogro de la Desolación :: numero de veces: 3
+2022-06-20 22:38:22.203 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Xeno-Diabolos :: numero de veces: 1
+2022-06-20 22:38:22.209 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Gran Demonio de las Fieras :: numero de veces: 2
+2022-06-20 22:38:22.213 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Lobo Oscuro Traicionero :: numero de veces: 3
+2022-06-20 22:38:22.219 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_3_Code(TestDeckBuild.java:120)] - Verificando el total de cartas en el mazo
+2022-06-20 22:38:54.254 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:56)] - Ingresando a Shadowverse.com
+2022-06-20 22:38:54.260 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Vampiro Carmesí :: numero de veces: 3
+2022-06-20 22:38:54.264 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Colgante de Sangre Fresca :: numero de veces: 3
+2022-06-20 22:38:54.269 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Lic�ntropa Peleona :: numero de veces: 3
+2022-06-20 22:38:54.275 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diabla de los Accesorios :: numero de veces: 3
+2022-06-20 22:38:54.280 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Garra Afilada :: numero de veces: 3
+2022-06-20 22:38:54.285 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Orden Oscura :: numero de veces: 3
+2022-06-20 22:38:54.290 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Urias, Vampiro del Fin :: numero de veces: 3
+2022-06-20 22:38:54.296 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Vampira del Cielo Nocturno :: numero de veces: 3
+2022-06-20 22:38:54.301 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Caballera Oscura del Purgatorio :: numero de veces: 2
+2022-06-20 22:38:54.306 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diva Demoniaca :: numero de veces: 2
+2022-06-20 22:38:54.312 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diabla Señorial :: numero de veces: 3
+2022-06-20 22:38:54.316 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Ogro de la Desolación :: numero de veces: 3
+2022-06-20 22:38:54.322 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Xeno-Diabolos :: numero de veces: 1
+2022-06-20 22:38:54.328 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Gran Demonio de las Fieras :: numero de veces: 2
+2022-06-20 22:38:54.332 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Lobo Oscuro Traicionero :: numero de veces: 3
+2022-06-20 22:38:54.338 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_3_Code(TestDeckBuild.java:120)] - Verificando el total de cartas en el mazo
+2022-06-20 22:46:12.741 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:56)] - Ingresando a Shadowverse.com
+2022-06-20 22:46:12.956 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Vampiro Carmesí :: numero de veces: 3
+2022-06-20 22:46:12.972 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Colgante de Sangre Fresca :: numero de veces: 3
+2022-06-20 22:46:12.986 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Lic�ntropa Peleona :: numero de veces: 3
+2022-06-20 22:46:12.997 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diabla de los Accesorios :: numero de veces: 3
+2022-06-20 22:46:13.005 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Garra Afilada :: numero de veces: 3
+2022-06-20 22:46:13.013 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Orden Oscura :: numero de veces: 3
+2022-06-20 22:46:13.021 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Urias, Vampiro del Fin :: numero de veces: 3
+2022-06-20 22:46:13.028 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Vampira del Cielo Nocturno :: numero de veces: 3
+2022-06-20 22:46:13.036 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Caballera Oscura del Purgatorio :: numero de veces: 2
+2022-06-20 22:46:13.043 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diva Demoniaca :: numero de veces: 2
+2022-06-20 22:46:13.073 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diabla Señorial :: numero de veces: 3
+2022-06-20 22:46:13.081 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Ogro de la Desolación :: numero de veces: 3
+2022-06-20 22:46:13.088 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Xeno-Diabolos :: numero de veces: 1
+2022-06-20 22:46:13.094 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Gran Demonio de las Fieras :: numero de veces: 2
+2022-06-20 22:46:13.101 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Lobo Oscuro Traicionero :: numero de veces: 3
+2022-06-20 22:46:13.116 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_3_Code(TestDeckBuild.java:120)] - Verificando el total de cartas en el mazo
+2022-06-20 22:46:49.213 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:56)] - Ingresando a Shadowverse.com
+2022-06-20 22:46:49.225 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Vampiro Carmesí :: numero de veces: 3
+2022-06-20 22:46:49.234 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Colgante de Sangre Fresca :: numero de veces: 3
+2022-06-20 22:46:49.244 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Lic�ntropa Peleona :: numero de veces: 3
+2022-06-20 22:46:49.252 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diabla de los Accesorios :: numero de veces: 3
+2022-06-20 22:46:49.258 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Garra Afilada :: numero de veces: 3
+2022-06-20 22:46:49.264 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Orden Oscura :: numero de veces: 3
+2022-06-20 22:46:49.271 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Urias, Vampiro del Fin :: numero de veces: 3
+2022-06-20 22:46:49.276 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Vampira del Cielo Nocturno :: numero de veces: 3
+2022-06-20 22:46:49.283 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Caballera Oscura del Purgatorio :: numero de veces: 2
+2022-06-20 22:46:49.289 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diva Demoniaca :: numero de veces: 2
+2022-06-20 22:46:49.293 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diabla Señorial :: numero de veces: 3
+2022-06-20 22:46:49.300 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Ogro de la Desolación :: numero de veces: 3
+2022-06-20 22:46:49.306 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Xeno-Diabolos :: numero de veces: 1
+2022-06-20 22:46:49.313 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Gran Demonio de las Fieras :: numero de veces: 2
+2022-06-20 22:46:49.319 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Lobo Oscuro Traicionero :: numero de veces: 3
+2022-06-20 22:46:49.325 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_3_Code(TestDeckBuild.java:120)] - Verificando el total de cartas en el mazo
+2022-06-20 22:47:12.627 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:56)] - Ingresando a Shadowverse.com
+2022-06-20 22:47:12.636 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Vampiro Carmesí :: numero de veces: 3
+2022-06-20 22:47:12.643 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Colgante de Sangre Fresca :: numero de veces: 3
+2022-06-20 22:47:12.649 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Lic�ntropa Peleona :: numero de veces: 3
+2022-06-20 22:47:12.656 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diabla de los Accesorios :: numero de veces: 3
+2022-06-20 22:47:12.662 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Garra Afilada :: numero de veces: 3
+2022-06-20 22:47:12.668 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Orden Oscura :: numero de veces: 3
+2022-06-20 22:47:12.675 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Urias, Vampiro del Fin :: numero de veces: 3
+2022-06-20 22:47:12.682 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Vampira del Cielo Nocturno :: numero de veces: 3
+2022-06-20 22:47:12.688 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Caballera Oscura del Purgatorio :: numero de veces: 2
+2022-06-20 22:47:12.695 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diva Demoniaca :: numero de veces: 2
+2022-06-20 22:47:12.701 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diabla Señorial :: numero de veces: 3
+2022-06-20 22:47:12.708 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Ogro de la Desolación :: numero de veces: 3
+2022-06-20 22:47:12.714 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Xeno-Diabolos :: numero de veces: 1
+2022-06-20 22:47:12.720 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Gran Demonio de las Fieras :: numero de veces: 2
+2022-06-20 22:47:12.726 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Lobo Oscuro Traicionero :: numero de veces: 3
+2022-06-20 22:47:12.732 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_3_Code(TestDeckBuild.java:120)] - Verificando el total de cartas en el mazo
+2022-06-20 22:54:12.605 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:56)] - Ingresando a Shadowverse.com
+2022-06-20 22:54:20.863 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:61)] - Click en boton de Portal
+2022-06-20 22:54:26.010 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Vampiro Carmesí :: numero de veces: 3
+2022-06-20 22:54:26.022 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Colgante de Sangre Fresca :: numero de veces: 3
+2022-06-20 22:54:26.036 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Lic�ntropa Peleona :: numero de veces: 3
+2022-06-20 22:54:26.050 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diabla de los Accesorios :: numero de veces: 3
+2022-06-20 22:54:26.074 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Garra Afilada :: numero de veces: 3
+2022-06-20 22:54:26.084 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Orden Oscura :: numero de veces: 3
+2022-06-20 22:54:26.093 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Urias, Vampiro del Fin :: numero de veces: 3
+2022-06-20 22:54:26.104 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Vampira del Cielo Nocturno :: numero de veces: 3
+2022-06-20 22:54:26.114 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Caballera Oscura del Purgatorio :: numero de veces: 2
+2022-06-20 22:54:26.123 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diva Demoniaca :: numero de veces: 2
+2022-06-20 22:54:26.132 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Diabla Señorial :: numero de veces: 3
+2022-06-20 22:54:26.140 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Ogro de la Desolación :: numero de veces: 3
+2022-06-20 22:54:26.148 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Xeno-Diabolos :: numero de veces: 1
+2022-06-20 22:54:26.168 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Gran Demonio de las Fieras :: numero de veces: 2
+2022-06-20 22:54:26.176 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:101)] - Buscando y agregando: Lobo Oscuro Traicionero :: numero de veces: 3
+2022-06-20 22:54:26.188 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_3_Code(TestDeckBuild.java:120)] - Verificando el total de cartas en el mazo
+2022-06-20 23:10:44.015 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:56)] - Ingresando a Shadowverse.com
+2022-06-20 23:11:03.081 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:62)] - Click en boton de Portal
+2022-06-20 23:11:04.644 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:66)] - Cambiando a la pesta�a portal
+2022-06-20 23:11:18.924 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:75)] - Cambiando a idioma espa�ol
+2022-06-20 23:11:21.642 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:78)] - Seleccionando creador de mazo Urias
+2022-06-20 23:11:23.255 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Vampiro Carmesí :: numero de veces: 3
+2022-06-20 23:11:23.266 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Colgante de Sangre Fresca :: numero de veces: 3
+2022-06-20 23:11:23.275 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Lic�ntropa Peleona :: numero de veces: 3
+2022-06-20 23:11:23.307 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Diabla de los Accesorios :: numero de veces: 3
+2022-06-20 23:11:23.319 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Garra Afilada :: numero de veces: 3
+2022-06-20 23:11:23.362 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Orden Oscura :: numero de veces: 3
+2022-06-20 23:11:23.369 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Urias, Vampiro del Fin :: numero de veces: 3
+2022-06-20 23:11:23.376 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Vampira del Cielo Nocturno :: numero de veces: 3
+2022-06-20 23:11:23.383 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Caballera Oscura del Purgatorio :: numero de veces: 2
+2022-06-20 23:11:23.390 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Diva Demoniaca :: numero de veces: 2
+2022-06-20 23:11:23.397 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Diabla Señorial :: numero de veces: 3
+2022-06-20 23:11:23.405 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Ogro de la Desolación :: numero de veces: 3
+2022-06-20 23:11:23.414 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Xeno-Diabolos :: numero de veces: 1
+2022-06-20 23:11:23.423 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Gran Demonio de las Fieras :: numero de veces: 2
+2022-06-20 23:11:23.434 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Lobo Oscuro Traicionero :: numero de veces: 3
+2022-06-20 23:11:23.455 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_3_Code(TestDeckBuild.java:121)] - Verificando el total de cartas en el mazo
+2022-06-20 23:29:34.340 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:56)] - Ingresando a Shadowverse.com
+2022-06-20 23:29:47.948 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:62)] - Click en boton de Portal
+2022-06-20 23:29:49.755 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:66)] - Cambiando a la pesta�a portal
+2022-06-20 23:29:53.462 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:75)] - Cambiando a idioma espa�ol
+2022-06-20 23:29:57.707 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:78)] - Seleccionando creador de mazo Urias
+2022-06-20 23:30:05.087 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:84)] - Verificando y seleccionando formato ilimitado
+2022-06-20 23:30:06.748 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Vampiro Carmesí :: numero de veces: 3
+2022-06-20 23:30:06.882 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Colgante de Sangre Fresca :: numero de veces: 3
+2022-06-20 23:30:07.575 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Lic�ntropa Peleona :: numero de veces: 3
+2022-06-20 23:30:07.660 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Diabla de los Accesorios :: numero de veces: 3
+2022-06-20 23:30:08.142 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Garra Afilada :: numero de veces: 3
+2022-06-20 23:30:08.845 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Orden Oscura :: numero de veces: 3
+2022-06-20 23:30:09.777 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Urias, Vampiro del Fin :: numero de veces: 3
+2022-06-20 23:30:10.706 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Vampira del Cielo Nocturno :: numero de veces: 3
+2022-06-20 23:30:11.755 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Caballera Oscura del Purgatorio :: numero de veces: 2
+2022-06-20 23:30:12.022 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Diva Demoniaca :: numero de veces: 2
+2022-06-20 23:30:12.622 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Diabla Señorial :: numero de veces: 3
+2022-06-20 23:30:13.680 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Ogro de la Desolación :: numero de veces: 3
+2022-06-20 23:30:14.051 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Xeno-Diabolos :: numero de veces: 1
+2022-06-20 23:30:14.122 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Gran Demonio de las Fieras :: numero de veces: 2
+2022-06-20 23:30:14.584 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Lobo Oscuro Traicionero :: numero de veces: 3
+2022-06-20 23:30:15.288 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_3_Code(TestDeckBuild.java:121)] - Verificando el total de cartas en el mazo
+2022-06-20 23:30:15.439 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_3_Code(TestDeckBuild.java:122)] - Cantidad de cartas: 31
+2022-06-20 23:42:20.754 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:56)] - Ingresando a Shadowverse.com
+2022-06-20 23:42:24.833 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:62)] - Click en boton de Portal
+2022-06-20 23:42:25.415 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:66)] - Cambiando a la pesta�a portal
+2022-06-20 23:42:28.469 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:75)] - Cambiando a idioma espa�ol
+2022-06-20 23:42:35.982 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:78)] - Seleccionando creador de mazo Urias
+2022-06-20 23:43:01.023 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_1_Navegacion(TestDeckBuild.java:84)] - Verificando y seleccionando formato ilimitado
+2022-06-20 23:43:05.906 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Vampiro Carmesí :: numero de veces: 3
+2022-06-20 23:43:07.227 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Colgante de Sangre Fresca :: numero de veces: 3
+2022-06-20 23:43:09.212 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Lic�ntropa Peleona :: numero de veces: 3
+2022-06-20 23:43:18.734 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Diabla de los Accesorios :: numero de veces: 3
+2022-06-20 23:43:20.414 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Garra Afilada :: numero de veces: 3
+2022-06-20 23:43:22.428 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Orden Oscura :: numero de veces: 3
+2022-06-20 23:43:24.210 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Urias, Vampiro del Fin :: numero de veces: 3
+2022-06-20 23:43:25.892 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Vampira del Cielo Nocturno :: numero de veces: 3
+2022-06-20 23:43:27.354 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Caballera Oscura del Purgatorio :: numero de veces: 2
+2022-06-20 23:43:43.710 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Diva Demoniaca :: numero de veces: 2
+2022-06-20 23:43:44.938 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Diabla Señorial :: numero de veces: 3
+2022-06-20 23:43:46.895 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Ogro de la Desolación :: numero de veces: 3
+2022-06-20 23:43:48.528 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Xeno-Diabolos :: numero de veces: 1
+2022-06-20 23:43:58.770 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Gran Demonio de las Fieras :: numero de veces: 2
+2022-06-20 23:44:00.331 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_2_Construccion(TestDeckBuild.java:102)] - Buscando y agregando: Lobo Oscuro Traicionero :: numero de veces: 3
+2022-06-20 23:44:02.652 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_3_Code(TestDeckBuild.java:122)] - Verificando el total de cartas en el mazo
+2022-06-20 23:44:03.102 INFO [TestNG-tests-1] [DeckBuildTest.TestDeckBuild.test_3_Code(TestDeckBuild.java:123)] - Cantidad de cartas: 40

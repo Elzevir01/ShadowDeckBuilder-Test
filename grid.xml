@@ -9,15 +9,13 @@
 			<class name="DeckBuildTest.TestDeckBuild" />
 		</classes>
 	</test>
-
-	<test name="OPERA">
-		<parameter name="browser" value="OPERA"></parameter>
+	<test name="EDGE">
+		<parameter name="browser" value="EDGE"></parameter>
 		<parameter name="nodeUrl" value="http://localhost:4444/wd/hub"></parameter>
 		<classes>
 			<class name="DeckBuildTest.TestDeckBuild" />
 		</classes>
 	</test>
-	
 	<test name="FIREFOX">
 		<parameter name="browser" value="FIREFOX"></parameter>
 		<parameter name="nodeUrl"
@@ -25,7 +23,5 @@
 		<classes>
 			<class name="DeckBuildTest.TestDeckBuild" />
 		</classes>
-		
 	</test>
-     
 </suite>

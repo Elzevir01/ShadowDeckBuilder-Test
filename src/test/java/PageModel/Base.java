@@ -1,5 +1,7 @@
 package PageModel;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,11 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import Js.jScript;
-
 public class Base {
 	WebDriver driver;
-	jScript js = new jScript();
 
 	///// CONSTRUCTOR/////
 	public Base(WebDriver driver) {
@@ -23,34 +22,43 @@ public class Base {
 	}
 	
 	////METODOS/////
-	public void clickElement(WebDriver driver, WebElement elemento) {
-		js.highLight(driver, elemento);
-        elemento.click();
-    }
-	public void clickElementFocus( WebDriver driver, WebElement elemento) {
-		js.moveyhightlight(driver, elemento);
-		elemento.click();	
+	public WebElement findElemento(By elemento) {
+		return driver.findElement(elemento);
 	}
-	public void clickCarta(WebDriver driver, String carta) throws InterruptedException {
-		WebElement crd = driver.findElement(By.xpath(carta));
-		js.moveyhightlight(driver, crd);
-		
-		@SuppressWarnings("deprecation")
-		WebDriverWait wait = new WebDriverWait(driver, 15);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(carta)));
-		
-		
-		if(crd.isDisplayed()) {
-		crd.click();
-		}
+	public void clickElemento(By elemento) {
+		findElemento(elemento).click();
 	}
-	public void cursorTo(WebDriver driver, WebElement elemento) {
-		js.highLight(driver, elemento);
-		new Actions(driver).moveToElement(elemento).perform();
+
+	public void sendKey(WebElement elemento, String texto) {
+		elemento.sendKeys(texto);
 	}
-	public boolean checkElement(WebElement elemento) {
+
+	public void cursorTo(By elemento) {
+		new Actions(driver).moveToElement(findElemento(elemento)).perform();
+	}
+
+	public void navegar(String url) {
+		driver.get(url);
+	}
+
+	public String titulo(WebDriver driver) {
+		return driver.getTitle();
+	}
+	public void clearText(WebElement elemento) {
+		elemento.clear();
+	}
+	public void esperarElemento(By elemento) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(elemento));	
+	}
+	public void esperarWeb() {
+	}
+	public void confirmarTitulo(String titulo) {
+		ExpectedConditions.titleIs(titulo);
+	}
+	public boolean checkElement(By elemento) {
 	    try {
-	    	if (elemento.isDisplayed()) {
+	    	if (findElemento(elemento).isDisplayed()) {
 	    		System.out.println("Element exist");
 			}
 	    	return true;
@@ -59,18 +67,4 @@ public class Base {
 	    	return false;
 	    }
 	}
-	public void navegar(WebDriver driver, String url) {
-		driver.get(url);
-		js.waitForPageToLoad(driver);
-	}
-	public void esperarxpath(WebDriver driver, String elemento) {
-		@SuppressWarnings("deprecation")
-		WebDriverWait wait = new WebDriverWait(driver, 15);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elemento)));
-		
-	}
-	public void esperarWeb() {
-		js.waitForPageToLoad(driver);
-	}
-	
 }

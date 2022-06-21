@@ -7,24 +7,11 @@
     <classes>
       <class name="DeckBuildTest.TestDeckBuild">
         <methods>
-          <include name="test_2_Construccion" invocation-numbers="2"/>
+          <include name="test_2_Construccion" invocation-numbers="0 2 8 12"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- DeckBuildTest.TestDeckBuild -->
     </classes>
   </test> <!-- CHROME(failed) -->
-  <test thread-count="1" parallel="tests" name="FIREFOX(failed)">
-    <parameter name="browser" value="FIREFOX"/>
-    <parameter name="nodeUrl" value="http://localhost:4444/wd/hub"/>
-    <classes>
-      <class name="DeckBuildTest.TestDeckBuild">
-        <methods>
-          <include name="test_2_Construccion" invocation-numbers="2"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- DeckBuildTest.TestDeckBuild -->
-    </classes>
-  </test> <!-- FIREFOX(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

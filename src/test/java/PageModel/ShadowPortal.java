@@ -1,49 +1,36 @@
 package PageModel;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ShadowPortal extends Base{
 	
 	///// ELEMENTOS WEB/////
-	// ---LOGO---//
-	@FindBy(css = ".bl-header-logo-image")
-	WebElement logo;
 	
-	// ---desplegable idioma->idioma--//
-	@FindBy(css = "li.is-lang") 
-	WebElement lenguaje;
-	@FindBy(css = ".es > a")
-	WebElement español;
+	// ---desplegable idioma->idioma-- //
+	private By lenguaje = By.xpath("//p[contains(text(), 'Language')]");
+	private By español = By.cssSelector(".es > a");
 
 	// ---boton urias--//
-	@FindBy(css = "li.top-character:nth-child(6) > img")
-	WebElement urias;
-
-	@FindBy(css = "li.top-slider-list:nth-child(6) > div:nth-child(3) > a")
-	WebElement uriasbuildDeck;
-
-	
+	private By urias = By.cssSelector("li.top-character:nth-child(6) > img");
+	private By uriasbuildDeck = By.cssSelector("li.top-slider-list:nth-child(6) > div:nth-child(3) > a");
 
 	///// CONSTRUCTOR/////
 	public ShadowPortal(WebDriver driver) {
-		this.driver = driver;
+		super.driver = driver;
 		PageFactory.initElements(driver, this);
-
 	}
 
 	//// METODOS/////
 	public void portalEspañol() throws InterruptedException {
-		cursorTo(driver, lenguaje);//driver, 
-		clickElement(driver, español);//driver, 
+		cursorTo(lenguaje);
+		findElemento(español).click();;
 		Thread.sleep(2000);
 	}
 	public void portalUrias() throws InterruptedException {
-		//esperarElement(driver, urias);
-		clickElement(driver, urias);
-		clickElement(driver, uriasbuildDeck);
+		findElemento(urias).click();;
+		findElemento(uriasbuildDeck).click();;
 		Thread.sleep(4000);
 	}
 	

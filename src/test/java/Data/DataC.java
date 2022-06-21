@@ -1,38 +1,39 @@
 package Data;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.DataProvider;
 
 public class DataC {
 	///// WEB ELEMENT CARTA/////
-	String VampiroCarmesí = "//img[contains(@src, 'C_119611010.png')]";
+	private By VampiroCarmesí = By.xpath("//img[contains(@src, 'C_119611010.png')]");
 	// x3
-	String ColgantedeSangreFresca = "//img[contains(@src, 'C_122613010.png')]";
+	private By ColgantedeSangreFresca = By.xpath( "//img[contains(@src, 'C_122613010.png')]");
 	// x3
-	String LicantropaPeleona = "//img[contains(@src, 'C_118611010.png')]";
+	private By LicantropaPeleona = By.xpath( "//img[contains(@src, 'C_118611010.png')]");
 	// x3
-	String DiabladelosAccesorios = "//img[contains(@src, 'C_120621010.png')]";
+	private By DiabladelosAccesorios = By.xpath( "//img[contains(@src, 'C_120621010.png')]");
 	// x3
-	String GarraAfilada = "//img[contains(@src, 'C_100614020.png')]";
+	private By GarraAfilada = By.xpath( "//img[contains(@src, 'C_100614020.png')]");
 	// x3
-	String OrdenOscura = "//img[contains(@src, 'C_122634010.png')]";
+	private By OrdenOscura = By.xpath( "//img[contains(@src, 'C_122634010.png')]");
 	// x3
-	String UriasVampirodelFin = "//img[contains(@src, 'C_121641030.png')]";
+	private By UriasVampirodelFin = By.xpath( "//img[contains(@src, 'C_121641030.png')]");
 	// x3
-	String VampiradelCieloNocturno = "//img[contains(@src, 'C_122641020.png')]";
+	private By VampiradelCieloNocturno = By.xpath( "//img[contains(@src, 'C_122641020.png')]");
 	// x3
-	String CaballeraOscuradelPurgatorio = "//img[contains(@src, 'C_119631020.png')]";
+	private By CaballeraOscuradelPurgatorio = By.xpath( "//img[contains(@src, 'C_119631020.png')]");
 	// x2
-	String DivaDemoniaca = "//img[contains(@src, 'C_121631010.png')]";
+	private By DivaDemoniaca = By.xpath( "//img[contains(@src, 'C_121631010.png')]");
 	// x2
-	String DiablaSeñorial = "//img[contains(@src, 'C_122621010.png')]";
+	private By DiablaSeñorial = By.xpath( "//img[contains(@src, 'C_122621010.png')]");
 	// x3
-	String OgrodelaDesolacian = "//img[contains(@src, 'C_121611030.png')]";
+	private By OgrodelaDesolacian = By.xpath( "//img[contains(@src, 'C_121611030.png')]");
 	// x3
-	String XenoDiabolos = "//img[contains(@src, 'C_119641020.png')]";
+	private By XenoDiabolos = By.xpath( "//img[contains(@src, 'C_119641020.png')]");
 	// x1
-	String GranDemoniodelasFieras = "//img[contains(@src, 'C_121641020.png')]";
+	private By GranDemoniodelasFieras = By.xpath( "//img[contains(@src, 'C_121641020.png')]");
 	// x2
-	String LoboOscuroTraicionero = "//img[contains(@src, 'C_122621020.png')]";
+	private By LoboOscuroTraicionero = By.xpath( "//img[contains(@src, 'C_122621020.png')]");
 	// x3
 
 	@DataProvider(name = "deckCards")
