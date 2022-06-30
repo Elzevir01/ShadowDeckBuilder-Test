@@ -31,11 +31,6 @@ public class BrowserFactory {
 		
 		return driver;
 	}
-
-	/*public WebDriver getInstance() {
-		// TODO Auto-generated method stub
-		return null;
-	}*/
 	public void removeDriver() {
 		driver.close();
 		driver.quit();
