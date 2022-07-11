@@ -29,10 +29,12 @@ public class Base {
 		findElemento(elemento).click();
 	}
 
-	public void sendKey(WebElement elemento, String texto) {
-		elemento.sendKeys(texto);
+	public void sendKey(By elemento, String texto) {
+		findElemento(elemento).sendKeys(texto);
 	}
-
+	public void clearText(By elemento) {
+		findElemento(elemento).clear();
+	}
 	public void cursorTo(By elemento) {
 		new Actions(driver).moveToElement(findElemento(elemento)).perform();
 	}
@@ -43,9 +45,6 @@ public class Base {
 
 	public String titulo(WebDriver driver) {
 		return driver.getTitle();
-	}
-	public void clearText(WebElement elemento) {
-		elemento.clear();
 	}
 	public void esperarElemento(By elemento) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));

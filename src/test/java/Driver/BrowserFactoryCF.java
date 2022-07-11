@@ -8,14 +8,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 
 public class BrowserFactoryCF {
-	DesiredCapabilities desiredCapability;
 	WebDriver driver;
-	String nodeURL = "";
 
 	public BrowserFactoryCF() {
 
@@ -49,12 +48,13 @@ public class BrowserFactoryCF {
 		case "EDGE":
 			EdgeOptions cape = new EdgeOptions();
 			driver = new RemoteWebDriver(new URL(nodeURL), cape);
-
 			break;
 
 		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+		driver.manage().timeouts().scriptTimeout(Duration.ofMinutes(2));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		return driver;
 
 	}
